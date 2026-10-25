@@ -1,0 +1,348 @@
+@font-face { font-family: Barlow; src: url("fonts/barlow-400.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: Barlow; src: url("fonts/barlow-600.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
+@font-face { font-family: Barlow; src: url("fonts/barlow-700.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: Barlow; src: url("fonts/barlow-900.ttf") format("truetype"); font-style: normal; font-weight: 900; font-display: swap; }
+@font-face { font-family: "Barlow Semi Condensed"; src: url("fonts/barlow-semi-condensed-700.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
+@font-face { font-family: "IBM Plex Mono"; src: url("fonts/ibm-plex-mono-500.ttf") format("truetype"); font-style: normal; font-weight: 500; font-display: swap; }
+
+/* BT-F04: shared Print Studio page identity; tools and collections use these
+   roles instead of independently sizing their title, emblem, and whiskers. */
+.page-identity { display: flex; align-items: center; gap: 24px; min-width: 0; }
+.page-identity .page-emblem { display: grid; place-items: center; flex: none; width: 76px; height: 76px; border-radius: 12px; }
+.page-identity .page-emblem img { display: block; width: 58px; height: 58px; }
+.page-heading-copy { min-width: 0; align-self: flex-start; }
+.page-identity .page-title { margin: 0; font: 900 clamp(44px, 3.125vw, 60px)/1.08 Barlow, sans-serif; letter-spacing: 0; white-space: normal; }
+/* Reuse the exact heading-strokes silhouette; page accents change only its ink. */
+.title-strokes { display: block; width: 40px; height: auto; aspect-ratio: 40 / 58.75; color: var(--page-title-accent, var(--bt-title-accent-landing)); background: currentColor; -webkit-mask: url("assets/work/heading-strokes.svg") center / 100% 100% no-repeat; mask: url("assets/work/heading-strokes.svg") center / 100% 100% no-repeat; }
+.page-title-end { display: inline-block; position: relative; padding-right: 34px; white-space: nowrap; }
+.page-title-end img, .page-title-end .title-strokes { position: absolute; right: 0; top: .14em; width: 28px; height: auto; }
+.page-identity .page-subtitle { margin: 8px 0 0; font-size: 21px; line-height: 1.35; }
+@media (max-width: 1000px) { .page-identity .page-title { font-size: 44px; } }
+@media (max-width: 600px) {
+  .page-identity { gap: 14px; align-items: flex-start; }
+  .page-identity .page-title { font-size: 35px; line-height: 1.05; }
+  .page-identity .page-emblem { width: 56px; height: 56px; border-radius: 8px; }
+  .page-identity .page-emblem img { width: 42px; height: 42px; }
+  .page-title-end { padding-right: 24px; }
+  .page-title-end img, .page-title-end .title-strokes { width: 20px; top: .04em; }
+  .page-identity .page-subtitle { margin-top: 10px; font-size: 17px; line-height: 1.4; }
+}
+@media (max-width: 360px) {
+  .page-identity { gap: 10px; }
+  .page-identity .page-title { font-size: 30px; }
+  .page-identity .page-emblem { width: 44px; height: 44px; }
+  .page-identity .page-emblem img { width: 34px; height: 34px; }
+}
+
+:root {
+  color-scheme: light;
+  --paper: #f6f0e2; --sheet: #fffcf4; --ink: #15252b; --action: #b54128;
+  --mustard: #f2c551; --forest: #214e3e; --border: #827e6f;
+  /* BT-F06: stable project identities. Keep external SVG cutouts in sync.
+     Assignments: Design Bible Foundations / Project icon identities. */
+  --bt-palette-machine-teal: #2e7d74;
+  --bt-palette-plum: #76506b; --bt-palette-navy: #103451;
+  --bt-palette-muted-blue: #526f91; --bt-palette-muted-violet: #655b83;
+  --bt-palette-olive: #687451;
+  --bt-palette-slate: #4a5860;
+  --bt-palette-deep-teal: #386975;
+  --bt-icon-machine: var(--bt-palette-machine-teal);
+  --bt-icon-safeseed: var(--forest);
+  --bt-icon-redactorium: var(--bt-palette-slate);
+  --bt-icon-comics: var(--bt-palette-plum);
+  --bt-icon-posters: var(--bt-palette-navy);
+  --bt-icon-tools: var(--ink);
+  --bt-icon-skip-ad: var(--bt-palette-muted-blue);
+  --bt-icon-safelist: var(--bt-palette-muted-blue);
+  --bt-icon-council: var(--bt-palette-muted-violet);
+  --bt-icon-guides: var(--bt-palette-olive);
+  --bt-icon-privacy-notice: var(--bt-palette-deep-teal);
+  --bt-icon-on-dark: var(--sheet); --bt-icon-on-light: var(--ink);
+  /* Each page keeps its title strokes a different color from its icon tile. */
+  --bt-title-accent-landing: #526f91;
+  --bt-title-accent-work: #4a5860;
+  --bt-title-accent-safeseed: #5f8067;
+  --bt-title-accent-redactorium: #2e7d74;
+  --bt-title-accent-council: #214e3e;
+  --bt-title-accent-comics: #687451;
+  --bt-title-accent-posters: #8b5a83;
+  /* Warm action color is reserved for buttons; other UI roles stay quiet. */
+  --ui-accent-neutral: var(--bt-palette-slate); --ui-highlight: #dce5d8;
+  --ui-error: #8d4b5a; --ui-navigation: var(--ink); --ui-focus: var(--ink);
+  --button-min-height: 48px; --button-label-min: 18px; --button-radius: 8px;
+  --header-height: 64px; --footer-height: 64px; --page-padding: 24px; --section-gap: 24px; --card-height: 96px;
+  /* Header, footer, padding, gap, and complete work row. Readable floors permit
+     natural scrolling at extreme zoom or unusually short viewport heights. */
+  --vertical-reserve: 325px;
+  /* Match the approved angled cabinet's 1122x1402 aspect ratio at its 655.5px reference width. */
+  --cabinet-reference-height: calc(655.5 * 1402 / 1122);
+  --u: clamp(.38px, min(.78px, .0416666667vw, calc((100svh - var(--vertical-reserve)) / var(--cabinet-reference-height))), .78px);
+  --composition-width: max(960px, calc(1800 * var(--u)));
+  --page-width: min(calc(100% - 64px), max(960px, var(--composition-width)));
+  font: 400 18px/1.4 Barlow, sans-serif;
+  color: var(--ink); background: var(--paper);
+}
+.work-page-shell { --page-title-accent: var(--bt-title-accent-work); }
+.seed-page-shell { --page-title-accent: var(--bt-title-accent-safeseed); }
+.rd-page-shell { --page-title-accent: var(--bt-title-accent-redactorium); }
+.guides-page-shell { --page-title-accent: var(--bt-title-accent-council); }
+.comic-panels-page { --page-title-accent: var(--bt-title-accent-comics); }
+.posters-page { --page-title-accent: var(--bt-title-accent-posters); }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 280px; min-height: 100svh; display: flex; flex-direction: column; background: var(--paper) url("assets/paper-grain.svg"); }
+button, a, summary { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; }
+button { font: inherit; }
+img, picture { display: block; }
+button, .button { cursor: pointer; }
+:focus-visible { outline: 3px solid var(--ink); outline-offset: 5px; }
+.skip-link { position: fixed; top: 8px; left: 8px; z-index: 20; padding: 12px 20px; background: var(--sheet); transform: translateY(-200%); opacity: 0; }
+.skip-link:focus { transform: none; opacity: 1; }
+.site-header { border-bottom: 1px solid var(--ink); }
+.header-inner { width: var(--page-width); height: var(--header-height); margin-inline: auto; display: flex; align-items: center; gap: 44px; position: relative; z-index: 3; }
+.brand { flex: none; width: 64px; height: 48px; display: grid; place-items: center; }
+/* Offset the master's transparent padding so the painted mark aligns with the page. */
+.brand img { width: 80px; height: auto; object-fit: contain; transform: translate(-17.2%, -8%); }
+.brand[data-preview-logo] { justify-items: start; }
+.logo-study-crop {
+  /* Ben's final selection: 01 Soft upright, using the reviewed source region. */
+  --logo-ratio: calc(375 / 314);
+  --logo-sheet-width: calc(1759 / 314);
+  --logo-sheet-height: calc(894 / 314);
+  --logo-source-x: calc(55 / 314);
+  --logo-source-y: calc(302 / 314);
+  --logo-height: 44px;
+  display: block;
+  width: calc(var(--logo-height) * var(--logo-ratio));
+  height: var(--logo-height);
+  background-image: url("assets/bt-rounder-studies-source.png");
+  background-size: calc(var(--logo-height) * var(--logo-sheet-width)) calc(var(--logo-height) * var(--logo-sheet-height));
+  background-position: calc(-1 * var(--logo-height) * var(--logo-source-x)) calc(-1 * var(--logo-height) * var(--logo-source-y));
+  background-repeat: no-repeat;
+  mix-blend-mode: darken;
+}
+.brand[data-preview-logo="01"] .logo-study-crop { transform: scale(.95); transform-origin: left center; }
+#site-nav { display: flex; align-items: center; gap: 32px; font-size: 20px; line-height: 28px; font-weight: 600; }
+#site-nav a, #site-nav summary { display: flex; align-items: center; min-width: 44px; min-height: 44px; text-decoration: none; }
+#site-nav a:hover, #site-nav summary:hover { text-decoration: underline; text-decoration-color: var(--ui-navigation); text-underline-offset: 6px; }
+#site-nav a[aria-current="page"] { text-decoration: underline; text-decoration-color: var(--ui-navigation); text-underline-offset: 6px; }
+.nav-group { position: relative; }
+.nav-group summary { gap: 10px; cursor: pointer; list-style: none; }
+.nav-group summary::-webkit-details-marker { display: none; }
+.nav-category > summary { gap: 12px; padding: 10px 12px; border-radius: 4px; }
+.nav-category > summary .nav-caret { margin-left: auto; flex: 0 0 8px; }
+.nav-category[open] > summary .nav-caret { margin-top: 4px; transform: rotate(225deg); }
+#site-nav .nav-category > summary:hover, #site-nav .nav-category > summary:focus-visible { background: var(--paper); text-decoration: none; }
+#site-nav .nav-category > summary:focus-visible { outline-offset: -2px; }
+.nav-category-items { margin: 0 4px 8px 25px; padding-left: 10px; border-left: 2px solid var(--border); }
+#site-nav .nav-category-items a { font-size: 16px; line-height: 23px; padding: 9px 8px; }
+.nav-category-items .nav-icon { flex-basis: 24px; width: 24px; height: 24px; border-radius: 5px; }
+.nav-category-items .nav-icon img { width: 21px; height: 21px; }
+.nav-label { min-width: 0; text-wrap: balance; }
+.label-term { white-space: nowrap; }
+.nav-caret { width: 8px; height: 8px; margin-top: -4px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg); }
+.nav-group[open] > summary .nav-caret { margin-top: 4px; transform: rotate(225deg); }
+.nav-submenu { position: absolute; top: calc(100% + 10px); left: -20px; width: 280px; max-height: calc(100svh - 90px); overflow-y: auto; overscroll-behavior: contain; padding: 8px; border: 1px solid var(--border); border-radius: 8px; background: var(--sheet); box-shadow: 0 4px 0 #15252b1a; font-size: 18px; line-height: 26px; }
+#site-nav .nav-submenu a { gap: 12px; padding: 10px 12px; border-radius: 4px; }
+.nav-icon { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 6px; }
+.nav-icon img { flex: none; }
+.nav-icon-seed { background: var(--bt-icon-safeseed); }
+.nav-icon-redactor { background: var(--bt-icon-redactorium); }
+.nav-icon-guide { background: var(--bt-icon-guides); }
+.nav-icon-privacy-notice { background: var(--bt-icon-privacy-notice); }
+.nav-icon-comics { background: var(--bt-icon-comics); }
+.nav-icon-posters { background: var(--bt-icon-posters); }
+.nav-icon-safelist { background: var(--bt-icon-safelist); }
+.nav-icon-council { background: var(--bt-icon-council); }
+.nav-title-part { white-space: nowrap; }
+#site-nav .nav-submenu a:hover { background: var(--paper); text-decoration: none; }
+#site-nav .nav-submenu a:focus-visible { outline-offset: -2px; background: var(--paper); }
+#site-nav .nav-submenu .nav-featured { border-bottom: 1px solid #827e6f40; border-radius: 0; margin-bottom: 4px; padding-bottom: 14px; }
+#site-nav .nav-submenu .nav-overview { border-top: 1px solid #827e6f40; border-radius: 0; margin-top: 4px; padding-top: 14px; }
+.menu-toggle { display: none; }
+main { width: var(--page-width); flex: 1; min-height: calc(100svh - var(--header-height) - var(--footer-height) - 1px); margin: 0 auto; padding-block: var(--page-padding); display: flex; flex-direction: column; justify-content: center; gap: var(--section-gap); }
+.page-container { width: var(--page-width); margin-inline: auto; max-width: none; }
+/* Shared flowing-page chrome. The accepted centered compositions do not opt in. */
+html:has(main.page-content) { scrollbar-gutter: stable; }
+.page-content {
+  --page-content-start: 14px;
+  --tool-page-end: 14px;
+  --tool-workspace-padding: 20px 32px 16px;
+  --tool-identity-separation: 16px;
+  --tool-processing-space: 16px;
+  --tool-processing-after: 14px;
+  --tool-processing-size: 17px;
+  padding-block-start: var(--page-content-start);
+  justify-content: flex-start;
+}
+.tool-page { padding-block-end: var(--tool-page-end); }
+.tool-workspace { padding: var(--tool-workspace-padding); background: var(--sheet); border: 1px solid var(--border); border-radius: 8px; }
+.tool-identity { padding-bottom: var(--tool-identity-separation); }
+.tool-processing { padding-bottom: var(--tool-processing-space); margin: 0 0 var(--tool-processing-after); border-bottom: 1px solid #827e6f66; font-size: var(--tool-processing-size); }
+@media (max-width: 1400px) {
+  .page-content { --page-content-start: 28px; --tool-page-end: 28px; --tool-workspace-padding: 28px; }
+}
+@media (max-width: 1000px) {
+  .page-content { --page-content-start: 24px; --tool-page-end: 24px; --tool-identity-separation: 24px; --tool-processing-space: 24px; --tool-processing-after: 24px; }
+}
+@media (max-width: 600px) {
+  .page-content { --tool-page-end: 32px; --tool-workspace-padding: 0; --tool-processing-space: 20px; --tool-processing-after: 22px; --tool-processing-size: 15px; }
+  .tool-workspace { border: 0; background: none; }
+}
+main:focus { outline: none; }
+.placeholder-page { display: flex; align-items: center; justify-content: center; padding: 48px 20px; text-align: center; }
+.placeholder-content h1 { font-size: clamp(48px, 8vw, 80px); line-height: 1.1; }
+.placeholder-content p { margin: 16px 0 28px; font-size: 24px; }
+/* Shared placeholder action: its size must not follow the page heading's width. */
+.placeholder-content .button { display: inline-flex; min-width: 180px; max-width: 100%; min-height: var(--button-min-height); padding: 8px 24px; font-size: var(--button-label-min); line-height: 24px; }
+.hero { width: var(--composition-width); max-width: 100%; margin-inline: auto; display: grid; grid-template-columns: 1fr 1fr; align-items: center; }
+.hero-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; container-type: inline-size; }
+.name-lockup { position: relative; width: calc(660 * var(--u)); height: calc(206 * var(--u)); flex: none; }
+h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u)); font-weight: 900; letter-spacing: 0; white-space: nowrap; }
+.name-underline { position: absolute; left: 0; top: calc(169 * var(--u)); }
+.name-underline img { width: calc(610 * var(--u)); height: auto; }
+.name-burst { position: absolute; left: calc(612 * var(--u)); top: calc(25 * var(--u)); }
+.name-burst img { width: calc(58 * var(--u)); height: auto; }
+.role { font-size: calc(66 * var(--u)); line-height: calc(72 * var(--u)); font-weight: 900; margin: calc(14 * var(--u)) 0 0; }
+.intro { width: max(460px, calc(875 * var(--u))); max-width: 100%; margin: max(12px, calc(14 * var(--u))) 0 0; font-size: max(18px, calc(36 * var(--u))); line-height: max(24px, calc(44 * var(--u))); text-wrap: balance; }
+/* Give the longer machine label a little more room for optical balance. */
+.hero-actions { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: max(12px, calc(20 * var(--u))); width: max(460px, calc(875 * var(--u))); max-width: 100%; margin-top: max(20px, calc(32 * var(--u))); }
+.button { min-height: max(var(--button-min-height), calc(80 * var(--u))); border-radius: var(--button-radius); display: flex; align-items: center; justify-content: center; gap: max(8px, calc(16 * var(--u))); text-decoration: none; font-size: max(var(--button-label-min), calc(30 * var(--u))); line-height: 1.2; font-weight: 700; transition: background-color 150ms ease, box-shadow 150ms ease; }
+.button-primary { color: var(--sheet); background: var(--action); padding: 10px max(10px, calc(20 * var(--u))); }
+.button-primary span { flex: 1; text-align: center; white-space: nowrap; }
+.button-primary img { width: max(22px, calc(32 * var(--u))); height: auto; }
+.button-primary:hover { background: #9d3520; }
+.button-secondary { border: 2px solid var(--ink); padding: 8px max(10px, calc(20 * var(--u))); background: var(--paper); white-space: nowrap; }
+.button-secondary img { width: max(26px, calc(40 * var(--u))); height: auto; }
+.button-secondary:hover { background: var(--sheet); box-shadow: 0 3px 0 var(--ink); }
+.machine-scene { min-width: 0; display: flex; justify-content: center; }
+.cabinet {
+  width: calc(655.5 * var(--u)); height: auto;
+  /* Fade only the approved image's empty paper margins into the page.
+     The cabinet, crest, and feet remain inside the opaque area. */
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), linear-gradient(to bottom, transparent, #000 2%, #000 96%, transparent);
+  mask-composite: intersect;
+}
+.featured-work { position: relative; scroll-margin-top: 24px; }
+.featured-work h2, .eyebrow { font: 500 16px/20px "IBM Plex Mono", monospace; text-transform: uppercase; margin: 0 0 8px; }
+.work-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: max(12px, calc(18 * var(--u))); }
+.work-card { display: flex; align-items: center; gap: max(12px, calc(20 * var(--u))); min-height: var(--card-height); padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; background: var(--sheet); text-decoration: none; transition: border-color 150ms ease, box-shadow 150ms ease; }
+.work-card:hover { border-color: var(--ink); box-shadow: 0 3px 0 #15252b1a; }
+.work-icon { display: grid; place-items: center; width: clamp(48px, calc(80 * var(--u)), 64px); height: clamp(48px, calc(80 * var(--u)), 64px); border-radius: 9px; flex: none; }
+.work-icon img { width: clamp(34px, calc(55 * var(--u)), 44px); height: auto; }
+.work-icon-seed { background: var(--bt-icon-safeseed); }
+.work-icon-redactor { background: var(--bt-icon-redactorium); }
+.featured-work .work-icon-redactor { background: #b54128; }
+.work-icon-guide { background: var(--bt-icon-guides); }
+.work-icon-privacy-notice { background: var(--bt-icon-privacy-notice); }
+.work-icon-comics { background: var(--bt-icon-comics); }
+.work-icon-posters { background: var(--bt-icon-posters); }
+.work-icon-safelist { background: var(--bt-icon-safelist); }
+.work-icon-council { background: var(--bt-icon-council); }
+.work-copy { display: grid; gap: 1px; flex: 1; min-width: 0; }
+.work-title { font: 700 max(22px, calc(32 * var(--u)))/1.2 "Barlow Semi Condensed", sans-serif; text-wrap: balance; }
+.work-purpose { font-size: max(16px, calc(22 * var(--u))); line-height: 1.25; }
+.chevron { width: 22px; height: auto; flex: none; }
+.site-footer { width: 100%; border-top: 1px solid var(--ink); }
+.footer-inner { width: var(--page-width); min-height: calc(var(--footer-height) - 1px); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; font-size: 16px; line-height: 24px; }
+.site-footer a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: underline; text-decoration-color: #827e6f80; text-underline-offset: 4px; }
+.site-footer a:hover { text-decoration-color: var(--ui-navigation); }
+@media (min-width: 1001px) and (max-height: 780px) {
+  :root { --header-height: 56px; --footer-height: 56px; --page-padding: 16px; --section-gap: 18px; --card-height: 88px; --vertical-reserve: 288px; }
+  /* Leave room for two-line featured titles without reducing their type size. */
+  .cabinet { max-height: calc(100svh - 320px); width: auto; max-width: 100%; }
+  .brand { width: 60px; height: 44px; }
+  .brand img { width: 72px; }
+  .logo-study-crop { --logo-height: 40px; }
+}
+@container (max-width: 460px) {
+  .hero-actions { grid-template-columns: 1fr; }
+  .button-primary span { flex: none; }
+}
+@media (max-width: 1000px) {
+  :root { --header-height: 56px; --footer-height: 60px; --page-width: calc(100% - 40px); }
+  .header-inner { width: auto; padding-inline: 20px; justify-content: space-between; gap: 20px; }
+  .brand { width: 60px; height: 44px; }
+  .brand img { width: 72px; }
+  .logo-study-crop { --logo-height: 40px; }
+  #site-nav { gap: 22px; font-size: 18px; line-height: 26px; }
+  .enhanced .menu-toggle { display: flex; align-items: center; justify-content: center; gap: 10px; min-width: 98px; min-height: 44px; padding: 8px 12px; color: var(--sheet); background: var(--action); border: 0; border-radius: 8px; font-size: 16px; font-weight: 600; line-height: 24px; }
+  .enhanced #site-nav { display: none; position: absolute; top: 64px; right: 20px; width: min(300px, calc(100vw - 40px)); max-height: calc(100svh - 80px); overflow-y: auto; overscroll-behavior: contain; padding: 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--sheet); box-shadow: 0 4px 0 #15252b1a; }
+  .enhanced #site-nav.is-open { display: grid; gap: 4px; }
+  .enhanced #site-nav a, .enhanced #site-nav summary { padding: 10px 12px; min-height: 44px; }
+  .enhanced #site-nav summary { justify-content: space-between; }
+  .enhanced #site-nav .nav-category > summary { justify-content: flex-start; }
+  .nav-category-items { margin-left: 14px; margin-right: 0; padding-left: 6px; }
+  .enhanced #site-nav .nav-category-items a { gap: 9px; padding: 9px 6px; }
+  .nav-submenu { position: static; width: auto; max-height: none; overflow: visible; margin: 0 12px 8px; padding: 0 0 0 8px; border: 0; border-left: 2px solid var(--border); border-radius: 0; background: transparent; box-shadow: none; font-size: 17px; }
+  :root:not(.enhanced) .header-inner { height: auto; min-height: var(--header-height); padding-block: 8px; flex-wrap: wrap; }
+  :root:not(.enhanced) #site-nav { width: 100%; flex-wrap: wrap; align-items: flex-start; gap: 8px 22px; }
+  main { width: 100%; min-height: 0; padding: 0; display: block; }
+  .hero { width: 100%; max-width: none; min-height: calc(100svh - var(--header-height) - var(--footer-height) - 1px); padding-block: 16px; display: flex; flex-direction: column; justify-content: center; gap: 12px; }
+  .hero-copy { padding-inline: 20px; width: 100%; max-width: 440px; margin-inline: auto; }
+  .name-lockup { width: 100%; height: 82px; }
+  h1 { font-size: 64px; line-height: 72px; }
+  .name-underline { top: 60px; }
+  .name-underline img { width: 228px; }
+  .name-burst { left: 232px; top: 10px; }
+  .name-burst img { width: 26px; }
+  .role { margin-top: 12px; font-size: 28px; line-height: 32px; }
+  .intro { margin-top: 12px; font-size: 18px; line-height: 24px; width: 100%; text-wrap: pretty; }
+  .hero-actions { grid-template-columns: 1fr; gap: 8px; width: 100%; margin-top: 20px; }
+  .button { min-height: var(--button-min-height); gap: 12px; padding: 10px 16px; font-size: var(--button-label-min); line-height: 24px; }
+  .button-primary span { flex: none; }
+  .button-primary img { width: 22px; }
+  .button-secondary { padding-block: 8px; }
+  .button-secondary img { width: 26px; }
+  .machine-scene { width: 100%; }
+  .cabinet { height: clamp(200px, calc(100svh - 470px - var(--footer-height)), 300px); width: auto; max-width: 100%; object-fit: contain; }
+  .enhanced .featured-work:not(:target):not(.is-revealed) { display: none; }
+  .featured-work { padding: 24px 20px 40px; }
+  .featured-work h2 { font-size: 16px; line-height: 22px; margin-bottom: 12px; }
+  .work-list { grid-template-columns: 1fr; gap: 12px; }
+  .work-card { min-height: 94px; padding: 12px; gap: 14px; }
+  .work-icon { width: 48px; height: 48px; border-radius: 8px; }
+  .work-icon img { width: 34px; }
+  .work-title { font-size: 22px; line-height: 26px; }
+  .work-purpose { font-size: 16px; line-height: 20px; }
+  .chevron { width: 22px; }
+  .footer-inner { width: calc(100% - 40px); }
+}
+@media (max-width: 359px) {
+  h1 { font-size: 60px; }
+  .name-underline img { width: 214px; }
+  .name-burst { left: 218px; }
+  .role { font-size: 27px; line-height: 31px; }
+  .footer-inner { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0; padding-block: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
+}
+
+/* Ben-approved project identities. Explicit nonhome scopes preserve the frozen
+   homepage's icon colors and assets; Shop remains outside this release. */
+:is(body.work-page-shell, body.seed-page-shell, body.rd-page-shell,
+    body.guides-page-shell, body.comic-panels-page, body.posters-page,
+    body.notice-page-shell, body.about-page-shell) {
+  --bt-icon-machine: #2e7d74;
+  --bt-icon-privacy-notice: #a12c50;
+  --bt-icon-comics: #245ea8;
+  --bt-icon-posters: #f2c551;
+  --bt-icon-redactorium: #303030;
+  --bt-icon-council: #6744a2;
+  --bt-icon-safeseed: #3f692a;
+  --bt-title-accent-safeseed: #a12c50;
+  --bt-title-accent-redactorium: #245ea8;
+  --bt-title-accent-council: #00875b;
+  --bt-title-accent-comics: #3f692a;
+  --bt-title-accent-posters: #6744a2;
+}
+body.notice-page-shell {
+  --bt-title-accent-privacy-notice-demo: #2e7d74;
+  --page-title-accent: var(--bt-title-accent-privacy-notice-demo);
+}
+/* Keep these two titles' whiskers beside their final word at every width. */
+:is(body.notice-page-shell, body.guides-page-shell) .page-title-end { padding-right: 32px; }
+@media (max-width: 600px) {
+  :is(body.notice-page-shell, body.guides-page-shell) .page-title-end { padding-right: 22px; }
+}

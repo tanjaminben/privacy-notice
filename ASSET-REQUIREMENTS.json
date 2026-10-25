@@ -1,0 +1,787 @@
+{
+  "schemaVersion": 1,
+  "scope": "External runtime media only; no source PNGs or artwork binaries distributed",
+  "files": [
+    {
+      "path": "site/assets/bending-machine-tile.svg",
+      "bytes": 1228,
+      "sha256": "085c987d5d4475b59e5dd2cb4d238957fe65e105f9c2624702b4a34bc87f403c",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/bt-rounder-studies-source.png",
+      "bytes": 1410466,
+      "sha256": "3280f11163c8fad0dfa361b5f6838b3680d1f0c9358d19602e4cc1d8a55db930",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/bt-soft-upright-01-rounded-favicon.svg",
+      "bytes": 1881104,
+      "sha256": "baaf6b959be6b9adafcc69d522725c4888b7b9c845994dc3363996c909babbc1",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/desktop-book.svg",
+      "bytes": 679,
+      "sha256": "3bbac02b975b62e65ed8663af619c69c246d352e212966e82cfb090f999a9c90",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/desktop-leaf.svg",
+      "bytes": 652,
+      "sha256": "ab0caa6afa49ac4efaca59f7382c536a99d1ff3153ceecf3d275f5590cdd3205",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/nav-anatomy.svg",
+      "bytes": 699,
+      "sha256": "28a8c9e4e9b860841f7bd91fdadd71680a0e2e65bf3c54bbf4ab2a962b1bcb40",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/nav-mechanica.svg",
+      "bytes": 609,
+      "sha256": "199c2ca22019bc8d7e275ec84ebe998f4494d8c207bfb6f5521047a58d2f79e2",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/nav-popup-panic.svg",
+      "bytes": 938,
+      "sha256": "6b43fc4005a9ec5ae0b8a6db8c00a8e705a427bb473676f52d0537ea358d7e78",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/nav-tools.svg",
+      "bytes": 447,
+      "sha256": "070d47f2cebdbb7308889cd8ca7d1ddca89228b407177ab7bf27bb377493a1e8",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/nav-work-grid.svg",
+      "bytes": 368,
+      "sha256": "55dd79279b5544af49a53ebc363020cbfcf6a3841402e74d95712f1c894c9517",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/paper-grain.svg",
+      "bytes": 409,
+      "sha256": "6cb27c09602238289497ecaceff286a318e49b21d647732b9c334a703d66f524",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/phone-menu.svg",
+      "bytes": 329,
+      "sha256": "22f0c458791b9982df3db149bbf3f58739cac7782975496ca5e59b350dee3864",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/work/comic-panels-cobalt.svg",
+      "bytes": 526,
+      "sha256": "bb5aef89b84398975314b574644e91254442f57863db3736738c4fad618f502a",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/work/council.svg",
+      "bytes": 376,
+      "sha256": "6a31b036f2327f7a1531e4d08ff655a3dcbbb861fff4bf26768ef2efe8c6ef8e",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/work/heading-strokes.svg",
+      "bytes": 377,
+      "sha256": "e91c697741f5930933429791bacd4a2a766706c93de4d5c8678ef544f5099574",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/work/movie-posters-yellow.svg",
+      "bytes": 423,
+      "sha256": "a37209f5b76ad034c6dd0a9ef9b657b22892374b444f77670237c53244330483",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/work/privacy-notice.svg",
+      "bytes": 466,
+      "sha256": "d15ea88054a8c90130566c7548ec926f918f4cd7382c7eff3964a183eeab0793",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/assets/work/redactorium.svg",
+      "bytes": 407,
+      "sha256": "8ae08528f495d6de3fa735c687308739b29d520092fa59e1c44e55c5c5666679",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/adult-pigeon-cool-480.webp",
+      "bytes": 21358,
+      "sha256": "de92b9159a8953debc6fc0963e3329822e04a24498ad6374e0b4ce66639fdf15",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/autumn-leaf-480.webp",
+      "bytes": 48512,
+      "sha256": "d1ce79624d31d9cebebe3ff11c77847b6fee07d7e971dcb6fef51667845a8b28",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/autumn-leaf-800.webp",
+      "bytes": 116720,
+      "sha256": "47ad72c1ab24e000db558c6a78cde1b225796ef5cd4a1f2e4251dc96c4a6a391",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/bakery-cookies-480.webp",
+      "bytes": 49020,
+      "sha256": "0c45d27151ed5054f4e876563004018f07ce6d0366bcb13a6e59e9c0ca493fe4",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/bakery-cookies-800.webp",
+      "bytes": 120210,
+      "sha256": "53f75bbd5040ed504c0df019f550cbae80b83aa4e7b4f96306b50bfe741faec0",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/baking-ingredients-480.webp",
+      "bytes": 55620,
+      "sha256": "bbdf124ad8e3ee1dd08f2a22221e49186321760f2c103216fa6246f2029b354e",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/baking-ingredients-800.webp",
+      "bytes": 143600,
+      "sha256": "9a51d502124392e361291f887850fb614c5fe67fd51383933f3fe096ab22b14f",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/breakfast-croissants-480.webp",
+      "bytes": 34146,
+      "sha256": "7671515cc33e1affc1f723bbb7ea43023bbab17bac78916e5ed924d3693a4696",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/breakfast-croissants-800.webp",
+      "bytes": 78652,
+      "sha256": "710c43d6781722168ac62af9955c6c5e08f32bdd8d6113115427e09f56564445",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/breakfast-square.png",
+      "bytes": 2130469,
+      "sha256": "5e79b0f442a9c5667f7b90c822a7e98e5905a220ffd6e586c96239ddb7e45399",
+      "status": "unapproved local candidate"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/carrots-wide-480.webp",
+      "bytes": 50078,
+      "sha256": "a47cb8af510b837f790fb21f8695ae45ee179fb25df1f899560699c06c8cc1ab",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/carrots-wide-800.webp",
+      "bytes": 113280,
+      "sha256": "d42e8c7f1519d336ebe84d53e4968b72e59d657dce29c5ab986ffdc0b2aa39b9",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/choices-480.webp",
+      "bytes": 17380,
+      "sha256": "3e238b7570f2a00ae58031c8740f61ae8603878428c08db1906a0ee67fe670cb",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/choices-800.webp",
+      "bytes": 38876,
+      "sha256": "8ce4ed686bff3026c1945bfee82d7c8c96d2e4fa31a0c8b0e1707b0248ec7576",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/citrus-bananas-480.webp",
+      "bytes": 32528,
+      "sha256": "02eeb27e56ee776c5a60c007880431c92100a28b3e920f3b5f4a7fcce5e8544b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/citrus-bananas-800.webp",
+      "bytes": 74360,
+      "sha256": "180749212d5b524fe6a30013f1b1b695e8dfa58645944058b4477b76fbb6270a",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/coupon-plane-480.webp",
+      "bytes": 16060,
+      "sha256": "7f7909ae8b7ccddb1cd4dc5a4160f306424bc64ce65e1eead7bb039d151f746c",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/coupon-plane-800.webp",
+      "bytes": 35232,
+      "sha256": "aae73aec9dd51c6b6561091e44bf1067180f37082f985b82df361c2ee3bb63dd",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/courier-pigeon-cool-480.webp",
+      "bytes": 27286,
+      "sha256": "a784b470b941d577dacce561af3b4de398b1053152e2fb1d8a88ae0a292abe5b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-post-office-1200.webp",
+      "bytes": 138764,
+      "sha256": "43360170ec811e716aac49e246967236152920ccdc8d0b2a3676e9ed9983d246",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-post-office-480.webp",
+      "bytes": 36450,
+      "sha256": "c322af0d89bac507dc631270a630b85d75a669429955fc13a6cc98c3e1d2721d",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-post-office-800.webp",
+      "bytes": 75272,
+      "sha256": "a304b31f5a3fc24d72592c2120c57248db09c5ec5740cfda9c73d55f06276860",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-post-office-cool-1200.webp",
+      "bytes": 136952,
+      "sha256": "0327cd78e48ac40ad8af0f26c904085d7b7a3deb64a449d6b2313a2567912a2b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-post-office-cool-480.webp",
+      "bytes": 36620,
+      "sha256": "76b45a444eec93ee092009ab7ca4d8434c0064bc19435ace0dbf4fbdeee59272",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-post-office-cool-800.webp",
+      "bytes": 76972,
+      "sha256": "4cbf6a7c928006565be264e4738ac814a3b71b77611259dfcfeb047d31b7e326",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-wide-480.webp",
+      "bytes": 29798,
+      "sha256": "a8b1fef0fc141015c8c7fbe1e526e94164d221e5f669130daf16abc0bfee517b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/dispatch-wide-800.webp",
+      "bytes": 59990,
+      "sha256": "201a7ddf23d23cd084e4763246315eb794fe841b91d48f52d0f5cbe8863ef566",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/duck-editor-1200.webp",
+      "bytes": 248162,
+      "sha256": "e7c2cb3e971e37057f290ac86317b4143c23b6efd269f794be5e83427e103064",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/duck-editor-480.webp",
+      "bytes": 53026,
+      "sha256": "efcdddc053af71f0d25793ce919398a592513cb4344b1096b6eb69bc73a1048e",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/duck-editor-800.webp",
+      "bytes": 125008,
+      "sha256": "3a03c058045902a4357df705e2b611f89df13e9f041c8cb3781c4c70e661be90",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/duck-editor-cool-1200.webp",
+      "bytes": 235048,
+      "sha256": "60508836494482c0db3d421c0de9bd2191ae2ad99203e3ec10c02e1ecd21a4b7",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/duck-editor-cool-480.webp",
+      "bytes": 52170,
+      "sha256": "77b1595a02c1d1779155bd6cab8a195645acd3f6157629c90aa7c7c45c82e0bc",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/duck-editor-cool-800.webp",
+      "bytes": 121058,
+      "sha256": "0a76492e5546240106042545014b3d73ca1c0600033f45f6b2fd1382d1092fcf",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/ducks-autumn-480.webp",
+      "bytes": 45954,
+      "sha256": "68f46a3ebf8da07db1fdf84fb8d4f2a351c1c36f60517e272ee3ca0bb967d1ed",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/ducks-autumn-800.webp",
+      "bytes": 107906,
+      "sha256": "d7aa5c3db62ce70c1c6c2a6465912b2cbeca75c998bb1b6c0bc9e432820d7ea1",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/farm-harvest-table-480.webp",
+      "bytes": 74128,
+      "sha256": "977b5a387d48459e29bd230670a7be03ee45c00c119f3006c3895b93629f6bc4",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/farm-harvest-table-800.webp",
+      "bytes": 170160,
+      "sha256": "ef44ba156457dee73b81ddc44bf8eda6c359fcf9f44032957db0b97a94d276b2",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/farm-to-table-480.webp",
+      "bytes": 62612,
+      "sha256": "a6a9aeccd0dcfb31c9fa70c8146868688dd08bff2fd1c44af402549cca1fa9d6",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/farm-to-table-800.webp",
+      "bytes": 151228,
+      "sha256": "aecf8a988f889a0bda5362326927107572ce9c096a4be08fb20cae0454d173cf",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-apples-480.webp",
+      "bytes": 39698,
+      "sha256": "4c076fcc3f5289edf4b0562a3b283e6e80629f18a99926d7cd92bd9170804ecc",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-apples-800.webp",
+      "bytes": 100822,
+      "sha256": "a1d9c6d3424907fafb12f96845bf349052d5066c6b13eb64d8cfded8d2aa78d3",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-bread-480.webp",
+      "bytes": 38244,
+      "sha256": "6b97c2c0147418abb1299be6baa077e50b4632882d0a143b1db50b720d882dd6",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-bread-800.webp",
+      "bytes": 91264,
+      "sha256": "f99b4d6fbbc3d613407d9d71a7823b6a32e6269b82a9ad00cfa8fe04de866f01",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-carrots-480.webp",
+      "bytes": 98004,
+      "sha256": "c2355c0d8c65a2edd6a61ccc8f7f6e7e39a557dbb392bc4386f368216645d772",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-carrots-800.webp",
+      "bytes": 239878,
+      "sha256": "98be9cb427b6203ce73be24494c297fe88121984af376ddd66b422fa5db734f8",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-harvest-480.webp",
+      "bytes": 23766,
+      "sha256": "acf9536c546574035e1627f6ee2ca4d3c9010a0850f9ee78fb34c0a0c6247fb7",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-harvest-800.webp",
+      "bytes": 51628,
+      "sha256": "86c62a53e30c4cae41533b09345f5c355a1fc4b7652d27db251e4885204752ec",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-milk-480.webp",
+      "bytes": 33726,
+      "sha256": "ac3c5474fa5e598779bc643186dfac01f97fbab71fc5e82c49140a0ac60e2d30",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-milk-800.webp",
+      "bytes": 97740,
+      "sha256": "44a99a9e781b58107ad151ae69881c72c817281e4f2aa0b236dd58cc7dabacaf",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-pantry-480.webp",
+      "bytes": 46270,
+      "sha256": "7b7617ac54c89307ff67a40020dde0c8d142a5c6dadbf79ccdedd14ebba174c8",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/food-pantry-800.webp",
+      "bytes": 114558,
+      "sha256": "5bdf622841a938490f806a35e373bab34b95c1679714b4c3b9705b0f370832dc",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-chips-480.webp",
+      "bytes": 47882,
+      "sha256": "d1191bf52731407addbbeb0cdcbaa45d1ac3e435a2446a281e6f34f5b2a0f822",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-chips-800.webp",
+      "bytes": 117000,
+      "sha256": "6e20b546c9c2e6e856b6f04df73282cbf4e7a6c28bb647aca12de4b8538cde76",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-pretzels-480.webp",
+      "bytes": 71072,
+      "sha256": "3b4f500deefa9b920a9b99829a6ebaa26d5c382f0e1dfb0c3005bd59c67b4fcb",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-pretzels-800.webp",
+      "bytes": 174482,
+      "sha256": "4a6b3f620e88c3c11ed8393f890a4967932544289db569a5cb384309b731fc89",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-sausages-480.webp",
+      "bytes": 37840,
+      "sha256": "f98bd1b3e801ae17a191745916adcd9499f0b0018a827e4837a42b3bdb404c09",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-sausages-800.webp",
+      "bytes": 92276,
+      "sha256": "f0bee7cc73828b751cb323a471430259625338477f72240323e0f512f71754a7",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-soda-480.webp",
+      "bytes": 45336,
+      "sha256": "8a0be90fc51c21d13630f0558d046deefb3fed71cafb5ea8b58860d2c2a1e7c5",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/game-day-soda-800.webp",
+      "bytes": 112050,
+      "sha256": "8a74fcf88dc713bc97d159c6f4a10346b44c0af06f1a9fdfee3a38f8a8ea55d1",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/groceries-square.png",
+      "bytes": 2664236,
+      "sha256": "7852ae352df1a81635a1f4e8207cf225492b9ddb48da970697676942ade0f9c9",
+      "status": "unapproved local candidate"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/harvest-grapes-480.webp",
+      "bytes": 56036,
+      "sha256": "c9f6b117f9ed610d56dad1bdec02608cc9723424eb2899032160bca7820d7d33",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/harvest-grapes-800.webp",
+      "bytes": 142542,
+      "sha256": "07f13c5e83c18206df687c286f4f42ca77074ba817f140b3f7c8107b3dd7f16c",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/harvest-pumpkin-480.webp",
+      "bytes": 46088,
+      "sha256": "aee57d34c3bc27966c0a160693ef249ce5c6ab45422bb392c742cdba8f532104",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/harvest-pumpkin-800.webp",
+      "bytes": 122046,
+      "sha256": "0ad408d3516072b09b26a5e5edbd601fd1116899832a20090a1218819949a6f8",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/household-cleaning-480.webp",
+      "bytes": 28720,
+      "sha256": "de079156a2aae01336ab38c1e421ee49b1c1c679f78093dcf56ee7c243f914eb",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/household-cleaning-800.webp",
+      "bytes": 68862,
+      "sha256": "f1a341bf5c070c3f4dd16ef2c2f2a4a261eac6aa5e6cc2821fa98c14aa0aff0f",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/market-basket-480.webp",
+      "bytes": 49490,
+      "sha256": "a51089e8be6b20d485128905e29a6c2df4a1900876fb704711816280cd2c54df",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/market-basket-800.webp",
+      "bytes": 118238,
+      "sha256": "04701398e47bae0e82cea9279a5b5f72533d53ebbc8421265418d54a241a1b4b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/masthead-basket-480.webp",
+      "bytes": 53178,
+      "sha256": "a801dd957a30497d3eb37c557d2133c527bd1ed8e920f2c4233b14ee5e6e9205",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/masthead-basket-800.webp",
+      "bytes": 129344,
+      "sha256": "2ba000c253b2cec08bd2842d3b116e67bbdc79c9b8efffaba920ac890a09b6fd",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/money-press-1200.webp",
+      "bytes": 202376,
+      "sha256": "a9b990b5818a910a33ffb89eaacee8a5798fd51c90affbc1ee232bc1308b679a",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/money-press-480.webp",
+      "bytes": 41550,
+      "sha256": "59676dee081d78c688391c19b49631b29bce6e6d1d1be38bef244f1d971d3ea5",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/money-press-800.webp",
+      "bytes": 99592,
+      "sha256": "2c576995493c34ea64c66b27ed075e88410db546b7607a4dad63d158339d7cbf",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/money-press-cool-1200.webp",
+      "bytes": 186820,
+      "sha256": "e05d854070d55433ee240069b447bf770552694ee4ece4221d50557a5f860d60",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/money-press-cool-480.webp",
+      "bytes": 41000,
+      "sha256": "328084cd58b401ed900ba87151616350e4342c70a520ea97f11a5dd22b30bb5b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/money-press-cool-800.webp",
+      "bytes": 93688,
+      "sha256": "69df5d78d356fc120051c3862efc338dc55594b388b834c3b8e69799b2580a7e",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/order-groceries-480.webp",
+      "bytes": 32150,
+      "sha256": "9cb5a6b040ab9a5452ba6a1627a27760c33aa3cae3b6f060575463916165b48b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/order-groceries-800.webp",
+      "bytes": 75170,
+      "sha256": "ce13f7e163d2e15741515e13a7bb91694e13a45d3a390c69d8db2cab26d43d47",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/reading-480.webp",
+      "bytes": 29120,
+      "sha256": "c97b1539ba11cb6a8a3df49b188aad5f2115325f94f3b7bc00ffb2e16d8cff53",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/reading-800.webp",
+      "bytes": 68164,
+      "sha256": "3f7beab0bacf4f5877acf60ad2a15dfd0f2c37e882dd482e893837e7c2d91ee5",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/records-archive-1200.webp",
+      "bytes": 221426,
+      "sha256": "6e3c321a8cc7360e9176d627c4629adea4630b4931098e1dc63bfbe56c722b0f",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/records-archive-480.webp",
+      "bytes": 46104,
+      "sha256": "34518a5710b64fc8d23a9ed96326198005d0d42a8a46fbaae963fdb1d6007882",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/records-archive-800.webp",
+      "bytes": 105676,
+      "sha256": "5558faf22468bcf17b395f7fe9dc5db1414c58345b52b7be26f4e5dcd0d2079f",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/records-archive-cool-1200.webp",
+      "bytes": 195308,
+      "sha256": "b736dc2bd20e8d1979b1ba74f1f706ddde6f8561dd16a42966b6906e00540358",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/records-archive-cool-480.webp",
+      "bytes": 43598,
+      "sha256": "6abef130cb95bce31546fab0b16d2554356a9b1cb0401a9de4ca1059007c56f6",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/records-archive-cool-800.webp",
+      "bytes": 94476,
+      "sha256": "92e7695507c6a29d11d548a4fc6e58c82ac637f9d7f9406775d09e29553d3df5",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/retention-480.webp",
+      "bytes": 23530,
+      "sha256": "d6bc4f0a2e12a32ea53daa92a30b9d812252dd3599e32bddd1e07c7784b55d2f",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/retention-800.webp",
+      "bytes": 55998,
+      "sha256": "3c17c0572558fd42b8cf41babe15e41a94ec5721b1226d378455e0d056baf4ba",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/rights-correspondence-1200.webp",
+      "bytes": 183254,
+      "sha256": "b7b81f425f21c4b8d0ea59eeefaff8035566debf303aa1eaf9cb4f9148b59832",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/rights-correspondence-480.webp",
+      "bytes": 37218,
+      "sha256": "9586721a22a4bb628d43a04dc4afd6231e0bdb1353c4f9ab07c59e3ece47c9a7",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/rights-correspondence-800.webp",
+      "bytes": 84852,
+      "sha256": "2da03dd79cbb62a0cf82221afd306cfe2d64b8baf80a8a7ad31f40e70048394e",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/rights-correspondence-cool-1200.webp",
+      "bytes": 150358,
+      "sha256": "8d27f800d9f9097064e4d3bacde027c826a11e7a9dd21ad596ed891839c27ffd",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/rights-correspondence-cool-480.webp",
+      "bytes": 31968,
+      "sha256": "26d7f6c1e83898504283c5f28d4ff97f2c64678a518ce054a2ea8593c945794b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/rights-correspondence-cool-800.webp",
+      "bytes": 72182,
+      "sha256": "e1509454d963ddf84d6aee2b799cdf5d68926ce5bf0bf753ca95d6f4139a173e",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/seasonal-flowers-480.webp",
+      "bytes": 59042,
+      "sha256": "c2841396432d29b14e54a58efab770c7ca8ee91862ac298e74a10e41499b8a55",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/seasonal-flowers-800.webp",
+      "bytes": 136752,
+      "sha256": "56289f357dfda3b2a6809d85caa9827a3df8323a4c5672bccc421a63472ccba5",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/shop-480.webp",
+      "bytes": 28160,
+      "sha256": "4816a890c8e184501fb65de05c049fb20b209d1386e1f29151b4850a5a35b30c",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/shop-800.webp",
+      "bytes": 61656,
+      "sha256": "033900e12e5b981c62173b0257e570d64521397ff30430447c87e182ac3707ae",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/shop-cool-1200.webp",
+      "bytes": 182726,
+      "sha256": "19839e83624093a0df0cb5c599bbff784883edd1b4df27edbbdfda4b114af534",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/shop-cool-480.webp",
+      "bytes": 38440,
+      "sha256": "0ce130e01fb810258e9349852ecb84f794c37c6c0ac0ad2d3c54e846f26cb82b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/shop-cool-800.webp",
+      "bytes": 87784,
+      "sha256": "ffc1700873f8a414cc32dbfccc793ee83899b94a175dd2343e28b42d2da30afd",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/subscription-480.webp",
+      "bytes": 15206,
+      "sha256": "9b233b92f32bda510d6d73b3e129e24e145721dee293b5c5bca993048925a4d0",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/subscription-800.webp",
+      "bytes": 33552,
+      "sha256": "cf15b74d6cbae97adfdf2dde7568b89e5e16cd5858331d41a83b60fff0b357b3",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/sunday-comic-minimization.webp",
+      "bytes": 123966,
+      "sha256": "49d7ac418932103ced7f10e4fc0f5042605a649de0d18831c8c3663e162a604b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/sunday-comic.webp",
+      "bytes": 84554,
+      "sha256": "ff7153df72822eff9c0fd2d0089bfa70e5ce05448e719714b28ced9f7169339b",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/sunday-pair-480.webp",
+      "bytes": 29646,
+      "sha256": "f9391ba3d7f9715883925b177828e90c01ee6927c6a27c9466b5fc01c3e1f2be",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/sunday-pair-800.webp",
+      "bytes": 62328,
+      "sha256": "011f77b2ed8e2f6e48d6b6dd9423b5df23decc8b7fcf31da4b2a3e3b9a7f7585",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/tools-480.webp",
+      "bytes": 22268,
+      "sha256": "2f6d774d20d280223d9e4dbe186079066a776bb1510d6dad89f97bea415dacc0",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/tools-800.webp",
+      "bytes": 47544,
+      "sha256": "ce34d6ffcbb75609d47023096cdd0b01de926fc783778824db723169651d9ba6",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/vegetable-spread-480.webp",
+      "bytes": 46956,
+      "sha256": "05bfde16e06b0def03735346d33253f454f43ac62391d799cffaf0f593384be8",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/vegetable-spread-800.webp",
+      "bytes": 111028,
+      "sha256": "95ca58c6301cc2742904738fb3584aa8bbdda715073f6fd4322439aa7867931c",
+      "status": "external runtime asset; rights retained"
+    },
+    {
+      "path": "site/guides/privacy-notice/art/vegetables-square.png",
+      "bytes": 3075938,
+      "sha256": "7806e21b8f2cd98fcac015b463f804ef78647075de49405b7eaba40c0bb8eb93",
+      "status": "unapproved local candidate"
+    }
+  ],
+  "note": "Three square PNGs retain unapproved local-candidate status. Their hashes describe the private build input and grant no approval or redistribution rights."
+}

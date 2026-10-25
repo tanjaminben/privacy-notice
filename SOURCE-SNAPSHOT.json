@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "kind": "public-source-snapshot",
+  "project": "privacy-notice",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 76,
+      "sha256": "9fe60cf369873e69253df2552a489072cde6edd39d32067de4b46646f2a28c6a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 67,
+      "sha256": "158841680499b25d24ec6f083092a33d279df398fdee5a799ecf430586474258"
+    },
+    {
+      "path": "ASSET-REQUIREMENTS.json",
+      "bytes": 32292,
+      "sha256": "f942ad4bd0802b1ccfcba6a1d2a34552bdf5218209b1aff7725ee4742e41ae7d"
+    },
+    {
+      "path": "docs/images/banner.png",
+      "bytes": 1759040,
+      "sha256": "42f176cebcf01bf0b08e8502b7446354d18b4588c97758ca25b92debee11b3e4"
+    },
+    {
+      "path": "docs/images/buttons/kofi-static.svg",
+      "bytes": 10065,
+      "sha256": "4181360ad81a84d3cf4559c928f93edf3b12f1a45b2b600ebea002fecf0e5863"
+    },
+    {
+      "path": "docs/images/buttons/kofi.svg",
+      "bytes": 10347,
+      "sha256": "508496ae7e231eede97f9d55184b3cda4510402be6bc1466efbd3f4e07a1ea7f"
+    },
+    {
+      "path": "docs/images/buttons/LICENSE-Barlow.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "docs/images/buttons/privacy-notice.svg",
+      "bytes": 6727,
+      "sha256": "3c92c764aea29713886e73d7ecd79e6f84e4ac4d8c4486dd07fdc3a78df94ea9"
+    },
+    {
+      "path": "package.json",
+      "bytes": 474,
+      "sha256": "998286b16eac598c85025bcd4764c7796818c4686e5200ec526e220021606f2b"
+    },
+    {
+      "path": "packages/privacy-notice/build.mjs",
+      "bytes": 18816,
+      "sha256": "84978f03dd4426ef42e97e911b05ba7a55c394ae1df8ca37db78b7532cf02f14"
+    },
+    {
+      "path": "packages/privacy-notice/source/config.js",
+      "bytes": 145,
+      "sha256": "da1caaf41581f5005e2111de8c3d7600d57e39c0c92dc5880741f975d43d07d5"
+    },
+    {
+      "path": "packages/privacy-notice/source/decoration.mjs",
+      "bytes": 633,
+      "sha256": "016546fb477c3293d77500eeca65f0e3771935bed24605bf443f0c6e66670174"
+    },
+    {
+      "path": "packages/privacy-notice/source/editions.css",
+      "bytes": 69287,
+      "sha256": "f1f0a8649b88d0c084209253ae08197708d0687d410298269cc2e7adc931dc31"
+    },
+    {
+      "path": "packages/privacy-notice/source/facts.mjs",
+      "bytes": 32052,
+      "sha256": "e4ffa38768211108893f9445cce061dfa0c50ddc8598d6a921974d6e4ef333b1"
+    },
+    {
+      "path": "packages/privacy-notice/source/lessons.mjs",
+      "bytes": 13946,
+      "sha256": "0a3390befae64625a17d8f966c95d2ead27bf92494ed2a8fc51b7352218456df"
+    },
+    {
+      "path": "packages/privacy-notice/source/notice.css",
+      "bytes": 17101,
+      "sha256": "7aa55f6c3510615e96322f2c01ff0c1bf5b5b0dae7317282306bb1a0fc9fd9a6"
+    },
+    {
+      "path": "packages/privacy-notice/source/notice.js",
+      "bytes": 2393,
+      "sha256": "764e3ffd91a6c54e3384341097e2f342c677660dbb6e6219283668a1461e2d18"
+    },
+    {
+      "path": "packages/privacy-notice/SOURCE-PROVENANCE.json",
+      "bytes": 24506,
+      "sha256": "d182378471929b158fd3aa32b10d0f3c659e07aaedcf66d05ec39b89659696c3"
+    },
+    {
+      "path": "packages/privacy-notice/templates/notice.html",
+      "bytes": 14739,
+      "sha256": "3ae9a3a9e2a524714df35390b66af4d982f4abad257430da4e02608c2ff2877a"
+    },
+    {
+      "path": "packages/privacy-notice/verify.mjs",
+      "bytes": 4847,
+      "sha256": "93e878957e4033e7e458ad3a47c6480d394bac3efe1cbf910c63e3ee829d4570"
+    },
+    {
+      "path": "preview/frame.html",
+      "bytes": 4400,
+      "sha256": "41be5b93609f975df294f95a7405527bfdef7f79739f0d92c501e36730d57254"
+    },
+    {
+      "path": "preview/server.mjs",
+      "bytes": 2448,
+      "sha256": "553d81a05d4865395ac57675e381c488fbbabbab2a94af2e0d19d6660169d765"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3063,
+      "sha256": "ee1e259133b2187d0182e97bada9cbdb2b40f65f50d8fc8b438d5f0cd13f1f2c"
+    },
+    {
+      "path": "scripts/verify-assets.mjs",
+      "bytes": 1434,
+      "sha256": "dd3977ddbd4b683f02f04d3d38999f143bd9a69543daee25dd3e2db57e308067"
+    },
+    {
+      "path": "scripts/verify-checkpoint.mjs",
+      "bytes": 1007,
+      "sha256": "f5adaec44e27d2b2d1baa30d890ad745686425b26b76ad64f50d6b7cdb1e9180"
+    },
+    {
+      "path": "scripts/verify-snapshot.mjs",
+      "bytes": 2796,
+      "sha256": "949e056dc7828346e2ecae3848859b017ba594d5ed216cf8dd0de2cb38d68660"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 431,
+      "sha256": "18fd718410dcbd5b26aa36254db77033d784671caeebbca9740b50bbe7604d6c"
+    },
+    {
+      "path": "site/explanation-annotations.js",
+      "bytes": 21751,
+      "sha256": "36b24a00e814b241a15e05c033e1b1a007924ad92825c6aad6588afd398bd42c"
+    },
+    {
+      "path": "site/explanations.css",
+      "bytes": 19849,
+      "sha256": "f3f2640a883e1db916046f1302be51536971aa3ce4499a6150f19705c8556a1d"
+    },
+    {
+      "path": "site/fonts/barlow-400.ttf",
+      "bytes": 82624,
+      "sha256": "a35caa4687f434d66453c1fe423d7074cfa9fd7ab80c19b0780f3862887d2fc9"
+    },
+    {
+      "path": "site/fonts/barlow-600.ttf",
+      "bytes": 85876,
+      "sha256": "c15439e7a03af5714282ec1780ff7b0214ec6a7db96300b54928dbcd2569ca0c"
+    },
+    {
+      "path": "site/fonts/barlow-700.ttf",
+      "bytes": 85776,
+      "sha256": "74103fd6d41bc32c63aa2e6eb3db619ddb80ce9ca1b1420d5548a23b8ee5d154"
+    },
+    {
+      "path": "site/fonts/barlow-900.ttf",
+      "bytes": 88592,
+      "sha256": "f02915c51cf58297cb4972449f81ae3ab68a1e7a8103a89689629ff01d8b9073"
+    },
+    {
+      "path": "site/fonts/barlow-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "site/fonts/barlow-semi-condensed-700.ttf",
+      "bytes": 88644,
+      "sha256": "6098b66ce7d608dcea8c6a2eeacfdeeee5416e0e0c12a2318595d3dd8c5babef"
+    },
+    {
+      "path": "site/fonts/barlowsemicondensed-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "site/fonts/ibm-plex-mono-500.ttf",
+      "bytes": 129916,
+      "sha256": "4fc14a73ca53ba9d32fd759ae1ca1a3133326035d0dd337862b3ee1633cc156e"
+    },
+    {
+      "path": "site/fonts/ibmplexmono-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/anton-400-latin.woff2",
+      "bytes": 18612,
+      "sha256": "d0fa07ff63dd60cbc0e2f58e29c802dca2a5ae0276c999f59c6111ab7bbaec3b"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/archivo-400-latin.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/archivo-400i-latin.woff2",
+      "bytes": 15820,
+      "sha256": "aff750193376fa0cc7299242c3847f3c1189a78a23d526bfc205dbfc526a5403"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/archivo-500-latin.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/archivo-600-latin.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/archivo-700-latin.woff2",
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/spacegrotesk-400-latin.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/spacegrotesk-500-latin.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/spacegrotesk-600-latin.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "site/guides/privacy-notice/fonts/spacegrotesk-700-latin.woff2",
+      "bytes": 22288,
+      "sha256": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d"
+    },
+    {
+      "path": "site/guides/privacy-notice/licenses/anton-OFL.txt",
+      "bytes": 4484,
+      "sha256": "ee67e6ee22790b7929f1a3769ca2801d565c64b5a9096942c1adf5596de9c9e4"
+    },
+    {
+      "path": "site/guides/privacy-notice/licenses/archivo-OFL.txt",
+      "bytes": 4388,
+      "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b"
+    },
+    {
+      "path": "site/guides/privacy-notice/licenses/lucide-ISC.txt",
+      "bytes": 880,
+      "sha256": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc"
+    },
+    {
+      "path": "site/guides/privacy-notice/licenses/spacegrotesk-OFL.txt",
+      "bytes": 4495,
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "path": "site/landing.js",
+      "bytes": 7920,
+      "sha256": "d581c9975f7af544c2d22fc8f89b4276941ade5e6ceb40ee074b9f74f1318f3d"
+    },
+    {
+      "path": "site/styles.css",
+      "bytes": 25571,
+      "sha256": "8daa6630a0259f9948cbfdee59212d4635d5a171f894ff3db2967100f6378a45"
+    },
+    {
+      "path": "site/vendor/nutshell/LICENSE.txt",
+      "bytes": 6554,
+      "sha256": "5537d4d10b76b81b6e8dfd8b644480a4b1efa332fbb0cdb61126c5be781ef7b4"
+    },
+    {
+      "path": "site/vendor/nutshell/nutshell.js",
+      "bytes": 177434,
+      "sha256": "3f13933c917b57528d2fb78fe904c92a4b7b03d4cb78c999578bd599f6c505c2"
+    },
+    {
+      "path": "site/vendor/rough-notation/LICENSE",
+      "bytes": 1068,
+      "sha256": "e9754a00aebde654e80f40bcf41dab667d6a41dfbbd2912bcf14fb07d468bf71"
+    },
+    {
+      "path": "site/vendor/rough-notation/rough-notation.esm.js",
+      "bytes": 10691,
+      "sha256": "af346fb8433c55a08400d4c8d3edd2083b5e5d1f78980f20cc7151cdc8379687"
+    },
+    {
+      "path": "SOURCE-SNAPSHOT.md",
+      "bytes": 858,
+      "sha256": "6abe3a526b9c66824f50899cec94c86d362a94be608f2de3494b232032cc45a0"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 1006,
+      "sha256": "0aa524e75e7e7010b0c7f6fdb3e26eb1194c0bff21c152d6613416ab7f17b848"
+    }
+  ],
+  "generatedPaths": [
+    "packages/privacy-notice/BUILD-MANIFEST.json",
+    "packages/privacy-notice/CONTENT-MAP.md",
+    "packages/privacy-notice/LESSON-MAP.md",
+    "site/guides/privacy-notice/index.html",
+    "site/guides/privacy-notice/notice.css",
+    "site/guides/privacy-notice/notice.js",
+    "site/guides/privacy-notice/config.js",
+    "site/guides/privacy-notice/editions.css",
+    "site/assets/bending-machine-tile.svg",
+    "site/assets/bt-rounder-studies-source.png",
+    "site/assets/bt-soft-upright-01-rounded-favicon.svg",
+    "site/assets/desktop-book.svg",
+    "site/assets/desktop-leaf.svg",
+    "site/assets/nav-anatomy.svg",
+    "site/assets/nav-mechanica.svg",
+    "site/assets/nav-popup-panic.svg",
+    "site/assets/nav-tools.svg",
+    "site/assets/nav-work-grid.svg",
+    "site/assets/paper-grain.svg",
+    "site/assets/phone-menu.svg",
+    "site/assets/work/comic-panels-cobalt.svg",
+    "site/assets/work/council.svg",
+    "site/assets/work/heading-strokes.svg",
+    "site/assets/work/movie-posters-yellow.svg",
+    "site/assets/work/privacy-notice.svg",
+    "site/assets/work/redactorium.svg",
+    "site/guides/privacy-notice/art/adult-pigeon-cool-480.webp",
+    "site/guides/privacy-notice/art/autumn-leaf-480.webp",
+    "site/guides/privacy-notice/art/autumn-leaf-800.webp",
+    "site/guides/privacy-notice/art/bakery-cookies-480.webp",
+    "site/guides/privacy-notice/art/bakery-cookies-800.webp",
+    "site/guides/privacy-notice/art/baking-ingredients-480.webp",
+    "site/guides/privacy-notice/art/baking-ingredients-800.webp",
+    "site/guides/privacy-notice/art/breakfast-croissants-480.webp",
+    "site/guides/privacy-notice/art/breakfast-croissants-800.webp",
+    "site/guides/privacy-notice/art/breakfast-square.png",
+    "site/guides/privacy-notice/art/carrots-wide-480.webp",
+    "site/guides/privacy-notice/art/carrots-wide-800.webp",
+    "site/guides/privacy-notice/art/choices-480.webp",
+    "site/guides/privacy-notice/art/choices-800.webp",
+    "site/guides/privacy-notice/art/citrus-bananas-480.webp",
+    "site/guides/privacy-notice/art/citrus-bananas-800.webp",
+    "site/guides/privacy-notice/art/coupon-plane-480.webp",
+    "site/guides/privacy-notice/art/coupon-plane-800.webp",
+    "site/guides/privacy-notice/art/courier-pigeon-cool-480.webp",
+    "site/guides/privacy-notice/art/dispatch-post-office-1200.webp",
+    "site/guides/privacy-notice/art/dispatch-post-office-480.webp",
+    "site/guides/privacy-notice/art/dispatch-post-office-800.webp",
+    "site/guides/privacy-notice/art/dispatch-post-office-cool-1200.webp",
+    "site/guides/privacy-notice/art/dispatch-post-office-cool-480.webp",
+    "site/guides/privacy-notice/art/dispatch-post-office-cool-800.webp",
+    "site/guides/privacy-notice/art/dispatch-wide-480.webp",
+    "site/guides/privacy-notice/art/dispatch-wide-800.webp",
+    "site/guides/privacy-notice/art/duck-editor-1200.webp",
+    "site/guides/privacy-notice/art/duck-editor-480.webp",
+    "site/guides/privacy-notice/art/duck-editor-800.webp",
+    "site/guides/privacy-notice/art/duck-editor-cool-1200.webp",
+    "site/guides/privacy-notice/art/duck-editor-cool-480.webp",
+    "site/guides/privacy-notice/art/duck-editor-cool-800.webp",
+    "site/guides/privacy-notice/art/ducks-autumn-480.webp",
+    "site/guides/privacy-notice/art/ducks-autumn-800.webp",
+    "site/guides/privacy-notice/art/farm-harvest-table-480.webp",
+    "site/guides/privacy-notice/art/farm-harvest-table-800.webp",
+    "site/guides/privacy-notice/art/farm-to-table-480.webp",
+    "site/guides/privacy-notice/art/farm-to-table-800.webp",
+    "site/guides/privacy-notice/art/food-apples-480.webp",
+    "site/guides/privacy-notice/art/food-apples-800.webp",
+    "site/guides/privacy-notice/art/food-bread-480.webp",
+    "site/guides/privacy-notice/art/food-bread-800.webp",
+    "site/guides/privacy-notice/art/food-carrots-480.webp",
+    "site/guides/privacy-notice/art/food-carrots-800.webp",
+    "site/guides/privacy-notice/art/food-harvest-480.webp",
+    "site/guides/privacy-notice/art/food-harvest-800.webp",
+    "site/guides/privacy-notice/art/food-milk-480.webp",
+    "site/guides/privacy-notice/art/food-milk-800.webp",
+    "site/guides/privacy-notice/art/food-pantry-480.webp",
+    "site/guides/privacy-notice/art/food-pantry-800.webp",
+    "site/guides/privacy-notice/art/game-day-chips-480.webp",
+    "site/guides/privacy-notice/art/game-day-chips-800.webp",
+    "site/guides/privacy-notice/art/game-day-pretzels-480.webp",
+    "site/guides/privacy-notice/art/game-day-pretzels-800.webp",
+    "site/guides/privacy-notice/art/game-day-sausages-480.webp",
+    "site/guides/privacy-notice/art/game-day-sausages-800.webp",
+    "site/guides/privacy-notice/art/game-day-soda-480.webp",
+    "site/guides/privacy-notice/art/game-day-soda-800.webp",
+    "site/guides/privacy-notice/art/groceries-square.png",
+    "site/guides/privacy-notice/art/harvest-grapes-480.webp",
+    "site/guides/privacy-notice/art/harvest-grapes-800.webp",
+    "site/guides/privacy-notice/art/harvest-pumpkin-480.webp",
+    "site/guides/privacy-notice/art/harvest-pumpkin-800.webp",
+    "site/guides/privacy-notice/art/household-cleaning-480.webp",
+    "site/guides/privacy-notice/art/household-cleaning-800.webp",
+    "site/guides/privacy-notice/art/market-basket-480.webp",
+    "site/guides/privacy-notice/art/market-basket-800.webp",
+    "site/guides/privacy-notice/art/masthead-basket-480.webp",
+    "site/guides/privacy-notice/art/masthead-basket-800.webp",
+    "site/guides/privacy-notice/art/money-press-1200.webp",
+    "site/guides/privacy-notice/art/money-press-480.webp",
+    "site/guides/privacy-notice/art/money-press-800.webp",
+    "site/guides/privacy-notice/art/money-press-cool-1200.webp",
+    "site/guides/privacy-notice/art/money-press-cool-480.webp",
+    "site/guides/privacy-notice/art/money-press-cool-800.webp",
+    "site/guides/privacy-notice/art/order-groceries-480.webp",
+    "site/guides/privacy-notice/art/order-groceries-800.webp",
+    "site/guides/privacy-notice/art/reading-480.webp",
+    "site/guides/privacy-notice/art/reading-800.webp",
+    "site/guides/privacy-notice/art/records-archive-1200.webp",
+    "site/guides/privacy-notice/art/records-archive-480.webp",
+    "site/guides/privacy-notice/art/records-archive-800.webp",
+    "site/guides/privacy-notice/art/records-archive-cool-1200.webp",
+    "site/guides/privacy-notice/art/records-archive-cool-480.webp",
+    "site/guides/privacy-notice/art/records-archive-cool-800.webp",
+    "site/guides/privacy-notice/art/retention-480.webp",
+    "site/guides/privacy-notice/art/retention-800.webp",
+    "site/guides/privacy-notice/art/rights-correspondence-1200.webp",
+    "site/guides/privacy-notice/art/rights-correspondence-480.webp",
+    "site/guides/privacy-notice/art/rights-correspondence-800.webp",
+    "site/guides/privacy-notice/art/rights-correspondence-cool-1200.webp",
+    "site/guides/privacy-notice/art/rights-correspondence-cool-480.webp",
+    "site/guides/privacy-notice/art/rights-correspondence-cool-800.webp",
+    "site/guides/privacy-notice/art/seasonal-flowers-480.webp",
+    "site/guides/privacy-notice/art/seasonal-flowers-800.webp",
+    "site/guides/privacy-notice/art/shop-480.webp",
+    "site/guides/privacy-notice/art/shop-800.webp",
+    "site/guides/privacy-notice/art/shop-cool-1200.webp",
+    "site/guides/privacy-notice/art/shop-cool-480.webp",
+    "site/guides/privacy-notice/art/shop-cool-800.webp",
+    "site/guides/privacy-notice/art/subscription-480.webp",
+    "site/guides/privacy-notice/art/subscription-800.webp",
+    "site/guides/privacy-notice/art/sunday-comic-minimization.webp",
+    "site/guides/privacy-notice/art/sunday-comic.webp",
+    "site/guides/privacy-notice/art/sunday-pair-480.webp",
+    "site/guides/privacy-notice/art/sunday-pair-800.webp",
+    "site/guides/privacy-notice/art/tools-480.webp",
+    "site/guides/privacy-notice/art/tools-800.webp",
+    "site/guides/privacy-notice/art/vegetable-spread-480.webp",
+    "site/guides/privacy-notice/art/vegetable-spread-800.webp",
+    "site/guides/privacy-notice/art/vegetables-square.png"
+  ]
+}

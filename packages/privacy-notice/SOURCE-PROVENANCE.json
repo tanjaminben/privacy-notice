@@ -1,0 +1,875 @@
+{
+  "schemaVersion": 1,
+  "kind": "sanitized-rendering-asset-contract",
+  "lineage": [
+    {
+      "asset": "sunday-pair",
+      "derivatives": [
+        {
+          "file": "sunday-pair-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29646,
+          "sha256": "f9391ba3d7f9715883925b177828e90c01ee6927c6a27c9466b5fc01c3e1f2be"
+        },
+        {
+          "file": "sunday-pair-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 62328,
+          "sha256": "011f77b2ed8e2f6e48d6b6dd9423b5df23decc8b7fcf31da4b2a3e3b9a7f7585"
+        }
+      ]
+    },
+    {
+      "asset": "reading",
+      "derivatives": [
+        {
+          "file": "reading-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 29120,
+          "sha256": "c97b1539ba11cb6a8a3df49b188aad5f2115325f94f3b7bc00ffb2e16d8cff53"
+        },
+        {
+          "file": "reading-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 68164,
+          "sha256": "3f7beab0bacf4f5877acf60ad2a15dfd0f2c37e882dd482e893837e7c2d91ee5"
+        }
+      ]
+    },
+    {
+      "asset": "tools",
+      "derivatives": [
+        {
+          "file": "tools-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 22268,
+          "sha256": "2f6d774d20d280223d9e4dbe186079066a776bb1510d6dad89f97bea415dacc0"
+        },
+        {
+          "file": "tools-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 47544,
+          "sha256": "ce34d6ffcbb75609d47023096cdd0b01de926fc783778824db723169651d9ba6"
+        }
+      ]
+    },
+    {
+      "asset": "subscription",
+      "derivatives": [
+        {
+          "file": "subscription-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 15206,
+          "sha256": "9b233b92f32bda510d6d73b3e129e24e145721dee293b5c5bca993048925a4d0"
+        },
+        {
+          "file": "subscription-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 33552,
+          "sha256": "cf15b74d6cbae97adfdf2dde7568b89e5e16cd5858331d41a83b60fff0b357b3"
+        }
+      ]
+    },
+    {
+      "asset": "shop",
+      "derivatives": [
+        {
+          "file": "shop-cool-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 38440,
+          "sha256": "0ce130e01fb810258e9349852ecb84f794c37c6c0ac0ad2d3c54e846f26cb82b"
+        },
+        {
+          "file": "shop-cool-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 87784,
+          "sha256": "ffc1700873f8a414cc32dbfccc793ee83899b94a175dd2343e28b42d2da30afd"
+        },
+        {
+          "file": "shop-cool-1200.webp",
+          "width": 1200,
+          "height": 800,
+          "bytes": 182726,
+          "sha256": "19839e83624093a0df0cb5c599bbff784883edd1b4df27edbbdfda4b114af534"
+        }
+      ]
+    },
+    {
+      "asset": "retention",
+      "derivatives": [
+        {
+          "file": "retention-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 23530,
+          "sha256": "d6bc4f0a2e12a32ea53daa92a30b9d812252dd3599e32bddd1e07c7784b55d2f"
+        },
+        {
+          "file": "retention-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 55998,
+          "sha256": "3c17c0572558fd42b8cf41babe15e41a94ec5721b1226d378455e0d056baf4ba"
+        }
+      ]
+    },
+    {
+      "asset": "choices",
+      "derivatives": [
+        {
+          "file": "choices-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 17380,
+          "sha256": "3e238b7570f2a00ae58031c8740f61ae8603878428c08db1906a0ee67fe670cb"
+        },
+        {
+          "file": "choices-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 38876,
+          "sha256": "8ce4ed686bff3026c1945bfee82d7c8c96d2e4fa31a0c8b0e1707b0248ec7576"
+        }
+      ]
+    },
+    {
+      "asset": "sunday-comic",
+      "derivatives": [
+        {
+          "file": "sunday-comic.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 84554,
+          "sha256": "ff7153df72822eff9c0fd2d0089bfa70e5ce05448e719714b28ced9f7169339b"
+        }
+      ]
+    },
+    {
+      "asset": "harvest",
+      "derivatives": [
+        {
+          "file": "food-harvest-480.webp",
+          "width": 480,
+          "height": 160,
+          "bytes": 23766,
+          "sha256": "acf9536c546574035e1627f6ee2ca4d3c9010a0850f9ee78fb34c0a0c6247fb7"
+        },
+        {
+          "file": "food-harvest-800.webp",
+          "width": 800,
+          "height": 267,
+          "bytes": 51628,
+          "sha256": "86c62a53e30c4cae41533b09345f5c355a1fc4b7652d27db251e4885204752ec"
+        }
+      ]
+    },
+    {
+      "asset": "bread",
+      "derivatives": [
+        {
+          "file": "food-bread-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 38244,
+          "sha256": "6b97c2c0147418abb1299be6baa077e50b4632882d0a143b1db50b720d882dd6"
+        },
+        {
+          "file": "food-bread-800.webp",
+          "width": 800,
+          "height": 400,
+          "bytes": 91264,
+          "sha256": "f99b4d6fbbc3d613407d9d71a7823b6a32e6269b82a9ad00cfa8fe04de866f01"
+        }
+      ]
+    },
+    {
+      "asset": "milk",
+      "derivatives": [
+        {
+          "file": "food-milk-480.webp",
+          "width": 480,
+          "height": 720,
+          "bytes": 33726,
+          "sha256": "ac3c5474fa5e598779bc643186dfac01f97fbab71fc5e82c49140a0ac60e2d30"
+        },
+        {
+          "file": "food-milk-800.webp",
+          "width": 800,
+          "height": 1200,
+          "bytes": 97740,
+          "sha256": "44a99a9e781b58107ad151ae69881c72c817281e4f2aa0b236dd58cc7dabacaf"
+        }
+      ]
+    },
+    {
+      "asset": "carrots",
+      "derivatives": [
+        {
+          "file": "food-carrots-480.webp",
+          "width": 480,
+          "height": 960,
+          "bytes": 98004,
+          "sha256": "c2355c0d8c65a2edd6a61ccc8f7f6e7e39a557dbb392bc4386f368216645d772"
+        },
+        {
+          "file": "food-carrots-800.webp",
+          "width": 800,
+          "height": 1600,
+          "bytes": 239878,
+          "sha256": "98be9cb427b6203ce73be24494c297fe88121984af376ddd66b422fa5db734f8"
+        }
+      ]
+    },
+    {
+      "asset": "apples",
+      "derivatives": [
+        {
+          "file": "food-apples-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 39698,
+          "sha256": "4c076fcc3f5289edf4b0562a3b283e6e80629f18a99926d7cd92bd9170804ecc"
+        },
+        {
+          "file": "food-apples-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 100822,
+          "sha256": "a1d9c6d3424907fafb12f96845bf349052d5066c6b13eb64d8cfded8d2aa78d3"
+        }
+      ]
+    },
+    {
+      "asset": "pantry",
+      "derivatives": [
+        {
+          "file": "food-pantry-480.webp",
+          "width": 480,
+          "height": 640,
+          "bytes": 46270,
+          "sha256": "7b7617ac54c89307ff67a40020dde0c8d142a5c6dadbf79ccdedd14ebba174c8"
+        },
+        {
+          "file": "food-pantry-800.webp",
+          "width": 800,
+          "height": 1067,
+          "bytes": 114558,
+          "sha256": "5bdf622841a938490f806a35e373bab34b95c1679714b4c3b9705b0f370832dc"
+        }
+      ]
+    },
+    {
+      "asset": "dispatch-wide",
+      "derivatives": [
+        {
+          "file": "dispatch-wide-480.webp",
+          "width": 480,
+          "height": 160,
+          "bytes": 29798,
+          "sha256": "a8b1fef0fc141015c8c7fbe1e526e94164d221e5f669130daf16abc0bfee517b"
+        },
+        {
+          "file": "dispatch-wide-800.webp",
+          "width": 800,
+          "height": 267,
+          "bytes": 59990,
+          "sha256": "201a7ddf23d23cd084e4763246315eb794fe841b91d48f52d0f5cbe8863ef566"
+        }
+      ]
+    },
+    {
+      "asset": "ducks-autumn",
+      "derivatives": [
+        {
+          "file": "ducks-autumn-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 45954,
+          "sha256": "68f46a3ebf8da07db1fdf84fb8d4f2a351c1c36f60517e272ee3ca0bb967d1ed"
+        },
+        {
+          "file": "ducks-autumn-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 107906,
+          "sha256": "d7aa5c3db62ce70c1c6c2a6465912b2cbeca75c998bb1b6c0bc9e432820d7ea1"
+        }
+      ]
+    },
+    {
+      "asset": "vegetable-spread",
+      "derivatives": [
+        {
+          "file": "vegetable-spread-480.webp",
+          "width": 480,
+          "height": 160,
+          "bytes": 46956,
+          "sha256": "05bfde16e06b0def03735346d33253f454f43ac62391d799cffaf0f593384be8"
+        },
+        {
+          "file": "vegetable-spread-800.webp",
+          "width": 800,
+          "height": 267,
+          "bytes": 111028,
+          "sha256": "95ca58c6301cc2742904738fb3584aa8bbdda715073f6fd4322439aa7867931c"
+        }
+      ]
+    },
+    {
+      "asset": "harvest-pumpkin",
+      "derivatives": [
+        {
+          "file": "harvest-pumpkin-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 46088,
+          "sha256": "aee57d34c3bc27966c0a160693ef249ce5c6ab45422bb392c742cdba8f532104"
+        },
+        {
+          "file": "harvest-pumpkin-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 122046,
+          "sha256": "0ad408d3516072b09b26a5e5edbd601fd1116899832a20090a1218819949a6f8"
+        }
+      ]
+    },
+    {
+      "asset": "harvest-grapes",
+      "derivatives": [
+        {
+          "file": "harvest-grapes-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 56036,
+          "sha256": "c9f6b117f9ed610d56dad1bdec02608cc9723424eb2899032160bca7820d7d33"
+        },
+        {
+          "file": "harvest-grapes-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 142542,
+          "sha256": "07f13c5e83c18206df687c286f4f42ca77074ba817f140b3f7c8107b3dd7f16c"
+        }
+      ]
+    },
+    {
+      "asset": "autumn-leaf",
+      "derivatives": [
+        {
+          "file": "autumn-leaf-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 48512,
+          "sha256": "d1ce79624d31d9cebebe3ff11c77847b6fee07d7e971dcb6fef51667845a8b28"
+        },
+        {
+          "file": "autumn-leaf-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 116720,
+          "sha256": "47ad72c1ab24e000db558c6a78cde1b225796ef5cd4a1f2e4251dc96c4a6a391"
+        }
+      ]
+    },
+    {
+      "asset": "bakery-cookies",
+      "derivatives": [
+        {
+          "file": "bakery-cookies-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 49020,
+          "sha256": "0c45d27151ed5054f4e876563004018f07ce6d0366bcb13a6e59e9c0ca493fe4"
+        },
+        {
+          "file": "bakery-cookies-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 120210,
+          "sha256": "53f75bbd5040ed504c0df019f550cbae80b83aa4e7b4f96306b50bfe741faec0"
+        }
+      ]
+    },
+    {
+      "asset": "household-cleaning",
+      "derivatives": [
+        {
+          "file": "household-cleaning-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 28720,
+          "sha256": "de079156a2aae01336ab38c1e421ee49b1c1c679f78093dcf56ee7c243f914eb"
+        },
+        {
+          "file": "household-cleaning-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 68862,
+          "sha256": "f1a341bf5c070c3f4dd16ef2c2f2a4a261eac6aa5e6cc2821fa98c14aa0aff0f"
+        }
+      ]
+    },
+    {
+      "asset": "seasonal-flowers",
+      "derivatives": [
+        {
+          "file": "seasonal-flowers-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 59042,
+          "sha256": "c2841396432d29b14e54a58efab770c7ca8ee91862ac298e74a10e41499b8a55"
+        },
+        {
+          "file": "seasonal-flowers-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 136752,
+          "sha256": "56289f357dfda3b2a6809d85caa9827a3df8323a4c5672bccc421a63472ccba5"
+        }
+      ]
+    },
+    {
+      "asset": "breakfast-croissants",
+      "derivatives": [
+        {
+          "file": "breakfast-croissants-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 34146,
+          "sha256": "7671515cc33e1affc1f723bbb7ea43023bbab17bac78916e5ed924d3693a4696"
+        },
+        {
+          "file": "breakfast-croissants-800.webp",
+          "width": 800,
+          "height": 400,
+          "bytes": 78652,
+          "sha256": "710c43d6781722168ac62af9955c6c5e08f32bdd8d6113115427e09f56564445"
+        }
+      ]
+    },
+    {
+      "asset": "market-basket",
+      "derivatives": [
+        {
+          "file": "market-basket-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 49490,
+          "sha256": "a51089e8be6b20d485128905e29a6c2df4a1900876fb704711816280cd2c54df"
+        },
+        {
+          "file": "market-basket-800.webp",
+          "width": 800,
+          "height": 400,
+          "bytes": 118238,
+          "sha256": "04701398e47bae0e82cea9279a5b5f72533d53ebbc8421265418d54a241a1b4b"
+        }
+      ]
+    },
+    {
+      "asset": "citrus-bananas",
+      "derivatives": [
+        {
+          "file": "citrus-bananas-480.webp",
+          "width": 480,
+          "height": 317,
+          "bytes": 32528,
+          "sha256": "02eeb27e56ee776c5a60c007880431c92100a28b3e920f3b5f4a7fcce5e8544b"
+        },
+        {
+          "file": "citrus-bananas-800.webp",
+          "width": 800,
+          "height": 528,
+          "bytes": 74360,
+          "sha256": "180749212d5b524fe6a30013f1b1b695e8dfa58645944058b4477b76fbb6270a"
+        }
+      ]
+    },
+    {
+      "asset": "game-day-soda",
+      "derivatives": [
+        {
+          "file": "game-day-soda-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 45336,
+          "sha256": "8a0be90fc51c21d13630f0558d046deefb3fed71cafb5ea8b58860d2c2a1e7c5"
+        },
+        {
+          "file": "game-day-soda-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 112050,
+          "sha256": "8a74fcf88dc713bc97d159c6f4a10346b44c0af06f1a9fdfee3a38f8a8ea55d1"
+        }
+      ]
+    },
+    {
+      "asset": "game-day-chips",
+      "derivatives": [
+        {
+          "file": "game-day-chips-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 47882,
+          "sha256": "d1191bf52731407addbbeb0cdcbaa45d1ac3e435a2446a281e6f34f5b2a0f822"
+        },
+        {
+          "file": "game-day-chips-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 117000,
+          "sha256": "6e20b546c9c2e6e856b6f04df73282cbf4e7a6c28bb647aca12de4b8538cde76"
+        }
+      ]
+    },
+    {
+      "asset": "game-day-pretzels",
+      "derivatives": [
+        {
+          "file": "game-day-pretzels-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 71072,
+          "sha256": "3b4f500deefa9b920a9b99829a6ebaa26d5c382f0e1dfb0c3005bd59c67b4fcb"
+        },
+        {
+          "file": "game-day-pretzels-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 174482,
+          "sha256": "4a6b3f620e88c3c11ed8393f890a4967932544289db569a5cb384309b731fc89"
+        }
+      ]
+    },
+    {
+      "asset": "game-day-sausages",
+      "derivatives": [
+        {
+          "file": "game-day-sausages-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 37840,
+          "sha256": "f98bd1b3e801ae17a191745916adcd9499f0b0018a827e4837a42b3bdb404c09"
+        },
+        {
+          "file": "game-day-sausages-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 92276,
+          "sha256": "f0bee7cc73828b751cb323a471430259625338477f72240323e0f512f71754a7"
+        }
+      ]
+    },
+    {
+      "asset": "masthead-basket",
+      "derivatives": [
+        {
+          "file": "masthead-basket-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 53178,
+          "sha256": "a801dd957a30497d3eb37c557d2133c527bd1ed8e920f2c4233b14ee5e6e9205"
+        },
+        {
+          "file": "masthead-basket-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 129344,
+          "sha256": "2ba000c253b2cec08bd2842d3b116e67bbdc79c9b8efffaba920ac890a09b6fd"
+        }
+      ]
+    },
+    {
+      "asset": "farm-to-table",
+      "derivatives": [
+        {
+          "file": "farm-to-table-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 62612,
+          "sha256": "a6a9aeccd0dcfb31c9fa70c8146868688dd08bff2fd1c44af402549cca1fa9d6"
+        },
+        {
+          "file": "farm-to-table-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 151228,
+          "sha256": "aecf8a988f889a0bda5362326927107572ce9c096a4be08fb20cae0454d173cf"
+        }
+      ]
+    },
+    {
+      "asset": "baking-ingredients",
+      "derivatives": [
+        {
+          "file": "baking-ingredients-480.webp",
+          "width": 480,
+          "height": 480,
+          "bytes": 55620,
+          "sha256": "bbdf124ad8e3ee1dd08f2a22221e49186321760f2c103216fa6246f2029b354e"
+        },
+        {
+          "file": "baking-ingredients-800.webp",
+          "width": 800,
+          "height": 800,
+          "bytes": 143600,
+          "sha256": "9a51d502124392e361291f887850fb614c5fe67fd51383933f3fe096ab22b14f"
+        }
+      ]
+    },
+    {
+      "asset": "carrots-wide",
+      "derivatives": [
+        {
+          "file": "carrots-wide-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 50078,
+          "sha256": "a47cb8af510b837f790fb21f8695ae45ee179fb25df1f899560699c06c8cc1ab"
+        },
+        {
+          "file": "carrots-wide-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 113280,
+          "sha256": "d42e8c7f1519d336ebe84d53e4968b72e59d657dce29c5ab986ffdc0b2aa39b9"
+        }
+      ]
+    },
+    {
+      "asset": "order-groceries",
+      "derivatives": [
+        {
+          "file": "order-groceries-480.webp",
+          "width": 480,
+          "height": 160,
+          "bytes": 32150,
+          "sha256": "9cb5a6b040ab9a5452ba6a1627a27760c33aa3cae3b6f060575463916165b48b"
+        },
+        {
+          "file": "order-groceries-800.webp",
+          "width": 800,
+          "height": 267,
+          "bytes": 75170,
+          "sha256": "ce13f7e163d2e15741515e13a7bb91694e13a45d3a390c69d8db2cab26d43d47"
+        }
+      ]
+    },
+    {
+      "asset": "coupon-plane",
+      "derivatives": [
+        {
+          "file": "coupon-plane-480.webp",
+          "width": 480,
+          "height": 160,
+          "bytes": 16060,
+          "sha256": "7f7909ae8b7ccddb1cd4dc5a4160f306424bc64ce65e1eead7bb039d151f746c"
+        },
+        {
+          "file": "coupon-plane-800.webp",
+          "width": 800,
+          "height": 267,
+          "bytes": 35232,
+          "sha256": "aae73aec9dd51c6b6561091e44bf1067180f37082f985b82df361c2ee3bb63dd"
+        }
+      ]
+    },
+    {
+      "asset": "farm-harvest-table",
+      "derivatives": [
+        {
+          "file": "farm-harvest-table-480.webp",
+          "width": 480,
+          "height": 320,
+          "bytes": 74128,
+          "sha256": "977b5a387d48459e29bd230670a7be03ee45c00c119f3006c3895b93629f6bc4"
+        },
+        {
+          "file": "farm-harvest-table-800.webp",
+          "width": 800,
+          "height": 533,
+          "bytes": 170160,
+          "sha256": "ef44ba156457dee73b81ddc44bf8eda6c359fcf9f44032957db0b97a94d276b2"
+        }
+      ]
+    },
+    {
+      "asset": "money-press",
+      "derivatives": [
+        {
+          "file": "money-press-cool-480.webp",
+          "width": 480,
+          "height": 200,
+          "bytes": 41000,
+          "sha256": "328084cd58b401ed900ba87151616350e4342c70a520ea97f11a5dd22b30bb5b"
+        },
+        {
+          "file": "money-press-cool-800.webp",
+          "width": 800,
+          "height": 333,
+          "bytes": 93688,
+          "sha256": "69df5d78d356fc120051c3862efc338dc55594b388b834c3b8e69799b2580a7e"
+        },
+        {
+          "file": "money-press-cool-1200.webp",
+          "width": 1200,
+          "height": 499,
+          "bytes": 186820,
+          "sha256": "e05d854070d55433ee240069b447bf770552694ee4ece4221d50557a5f860d60"
+        }
+      ]
+    },
+    {
+      "asset": "dispatch-post-office",
+      "derivatives": [
+        {
+          "file": "dispatch-post-office-cool-480.webp",
+          "width": 480,
+          "height": 160,
+          "bytes": 36620,
+          "sha256": "76b45a444eec93ee092009ab7ca4d8434c0064bc19435ace0dbf4fbdeee59272"
+        },
+        {
+          "file": "dispatch-post-office-cool-800.webp",
+          "width": 800,
+          "height": 267,
+          "bytes": 76972,
+          "sha256": "4cbf6a7c928006565be264e4738ac814a3b71b77611259dfcfeb047d31b7e326"
+        },
+        {
+          "file": "dispatch-post-office-cool-1200.webp",
+          "width": 1200,
+          "height": 400,
+          "bytes": 136952,
+          "sha256": "0327cd78e48ac40ad8af0f26c904085d7b7a3deb64a449d6b2313a2567912a2b"
+        }
+      ]
+    },
+    {
+      "asset": "records-archive",
+      "derivatives": [
+        {
+          "file": "records-archive-cool-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 43598,
+          "sha256": "6abef130cb95bce31546fab0b16d2554356a9b1cb0401a9de4ca1059007c56f6"
+        },
+        {
+          "file": "records-archive-cool-800.webp",
+          "width": 800,
+          "height": 400,
+          "bytes": 94476,
+          "sha256": "92e7695507c6a29d11d548a4fc6e58c82ac637f9d7f9406775d09e29553d3df5"
+        },
+        {
+          "file": "records-archive-cool-1200.webp",
+          "width": 1200,
+          "height": 600,
+          "bytes": 195308,
+          "sha256": "b736dc2bd20e8d1979b1ba74f1f706ddde6f8561dd16a42966b6906e00540358"
+        }
+      ]
+    },
+    {
+      "asset": "rights-correspondence",
+      "derivatives": [
+        {
+          "file": "rights-correspondence-cool-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 31968,
+          "sha256": "26d7f6c1e83898504283c5f28d4ff97f2c64678a518ce054a2ea8593c945794b"
+        },
+        {
+          "file": "rights-correspondence-cool-800.webp",
+          "width": 800,
+          "height": 400,
+          "bytes": 72182,
+          "sha256": "e1509454d963ddf84d6aee2b799cdf5d68926ce5bf0bf753ca95d6f4139a173e"
+        },
+        {
+          "file": "rights-correspondence-cool-1200.webp",
+          "width": 1200,
+          "height": 600,
+          "bytes": 150358,
+          "sha256": "8d27f800d9f9097064e4d3bacde027c826a11e7a9dd21ad596ed891839c27ffd"
+        }
+      ]
+    },
+    {
+      "asset": "duck-editor",
+      "derivatives": [
+        {
+          "file": "duck-editor-cool-480.webp",
+          "width": 480,
+          "height": 360,
+          "bytes": 52170,
+          "sha256": "77b1595a02c1d1779155bd6cab8a195645acd3f6157629c90aa7c7c45c82e0bc"
+        },
+        {
+          "file": "duck-editor-cool-800.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 121058,
+          "sha256": "0a76492e5546240106042545014b3d73ca1c0600033f45f6b2fd1382d1092fcf"
+        },
+        {
+          "file": "duck-editor-cool-1200.webp",
+          "width": 1200,
+          "height": 900,
+          "bytes": 235048,
+          "sha256": "60508836494482c0db3d421c0de9bd2191ae2ad99203e3ec10c02e1ecd21a4b7"
+        }
+      ]
+    },
+    {
+      "asset": "sunday-comic-minimization",
+      "derivatives": [
+        {
+          "file": "sunday-comic-minimization.webp",
+          "width": 800,
+          "height": 600,
+          "bytes": 123966,
+          "sha256": "49d7ac418932103ced7f10e4fc0f5042605a649de0d18831c8c3663e162a604b"
+        }
+      ]
+    },
+    {
+      "asset": "courier-pigeon-cool",
+      "derivatives": [
+        {
+          "file": "courier-pigeon-cool-480.webp",
+          "width": 480,
+          "height": 268,
+          "bytes": 27286,
+          "sha256": "a784b470b941d577dacce561af3b4de398b1053152e2fb1d8a88ae0a292abe5b"
+        }
+      ]
+    },
+    {
+      "asset": "adult-pigeon-cool",
+      "derivatives": [
+        {
+          "file": "adult-pigeon-cool-480.webp",
+          "width": 480,
+          "height": 267,
+          "bytes": 21358,
+          "sha256": "de92b9159a8953debc6fc0963e3329822e04a24498ad6374e0b4ce66639fdf15"
+        }
+      ]
+    }
+  ]
+}

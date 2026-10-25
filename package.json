@@ -1,0 +1,15 @@
+{
+  "name": "privacy-notice-anatomy",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/verify-assets.mjs && node packages/privacy-notice/build.mjs",
+    "verify": "node scripts/verify-snapshot.mjs && node scripts/verify-checkpoint.mjs",
+    "verify:build": "node scripts/verify-assets.mjs && node packages/privacy-notice/verify.mjs",
+    "preview": "node preview/server.mjs"
+  }
+}

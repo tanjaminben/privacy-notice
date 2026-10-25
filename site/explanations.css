@@ -1,0 +1,164 @@
+/* Shared authored help: equivalent controls never inherit a tool's local type scale. */
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-expandable {
+  --nutshell-dot-line-start: 8px; --nutshell-dot-up: .4em; --nutshell-dot-down: .7em;
+  --nutshell-dot-offset: calc(.5lh - .565em);
+  display: inline-block; vertical-align: baseline; max-width: 100%; min-height: 44px;
+  position: relative; padding: 8px 0 8px .45em; border-bottom: 0;
+  color: var(--ink, #15252b);
+  font: 500 17px/1.5 Barlow, sans-serif !important;
+  text-decoration: none;
+}
+/* Only authored inline prose opts out of the standalone 44px target. Limit the
+   hook to this trigger or its direct wrapper, never deeper nested help. */
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is(.nutshell-expandable.explanation-inline, .explanation-inline > .nutshell-expandable) {
+  --nutshell-dot-line-start: 0px; --nutshell-dot-offset: 0px;
+  display: inline; vertical-align: baseline; min-height: 0; padding: 0 0 0 .49em;
+}
+/* Center the original dot pair against the first line's letter ink. Inline
+   prose already starts at the glyph box, so it needs no line-box correction.
+   Keep the source spread/converge motion around that same fixed center. */
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is(.nutshell-ball-up, .nutshell-ball-down) {
+  display: inline-block; position: absolute; left: 1px; width: .15em; height: .15em;
+  border-radius: 1em; pointer-events: none; transition: top .1s ease-in-out;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-ball-up { top: calc(var(--nutshell-dot-line-start) + var(--nutshell-dot-up) + var(--nutshell-dot-offset)); }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-ball-down { top: calc(var(--nutshell-dot-line-start) + var(--nutshell-dot-down) + var(--nutshell-dot-offset)); }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-expandable[mode="closed"]:is(:hover, :focus-visible) {
+  --nutshell-dot-up: .2em; --nutshell-dot-down: .9em;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-expandable[mode="open"]:is(:hover, :focus-visible) {
+  --nutshell-dot-up: .55em; --nutshell-dot-down: .55em;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-expandable-text {
+  font: inherit !important; padding-left: 0;
+  text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: .1em;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-expandable:focus-visible {
+  outline: 2px solid var(--ink, #15252b); outline-offset: -2px;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble {
+  display: block; max-width: 100%; min-width: 0; overflow-wrap: anywhere;
+  color: var(--ink, #15252b) !important; background: var(--paper, #f6f0e2);
+  border: 1px solid #827e6f !important; border-radius: 8px; padding: 12px 16px 8px;
+  font: 400 17px/1.5 Barlow, sans-serif !important; text-decoration: none !important;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble .nutshell-bubble { right: 0; width: 100%; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-arrow {
+  left: clamp(16px, var(--explanation-arrow-x, 33px), calc(100% - 56px)) !important;
+  border-left: 20px solid transparent !important; border-right: 20px solid transparent !important;
+  border-bottom: 20px solid #827e6f !important;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-arrow::after {
+  border-left: 20px solid transparent !important; border-right: 20px solid transparent !important;
+  border-bottom: 20px solid var(--arrow-background, #f6f0e2) !important;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section {
+  padding: 0 4px; min-height: 0; font: 400 17px/1.5 Barlow, sans-serif;
+}
+/* Nutshell wraps the excerpt in a div. Its vendor margins, last-paragraph
+   margin and section padding must not stack into an empty close footer. */
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div { margin-block: 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > :first-child { margin-top: 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > :last-child { margin-bottom: 0; }
+/* Keep terminal standalone help targets 44px tall, with spare hit area above
+   the text. A separate colon column stays beside the first wrapped line.
+   Apply this to every row of a final list so row rhythm stays even. */
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > p:not(.explanation-inline) > .nutshell-expandable:not(.explanation-inline),
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > :is(ul, ol):last-child > li:not(.explanation-inline) > .nutshell-expandable:not(.explanation-inline) {
+  --nutshell-dot-line-start: 0px;
+  display: inline-grid; grid-template-columns: .34em minmax(0, 1fr); column-gap: .15em;
+  align-content: end; align-items: start; padding: calc(44px - 1.5em) 0 0;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > p:not(.explanation-inline) > .nutshell-expandable:not(.explanation-inline) > :is(.nutshell-ball-up, .nutshell-ball-down),
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > :is(ul, ol):last-child > li:not(.explanation-inline) > .nutshell-expandable:not(.explanation-inline) > :is(.nutshell-ball-up, .nutshell-ball-down) { position: relative; left: 1px; grid-column: 1; grid-row: 1; align-self: start; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > p:not(.explanation-inline) > .nutshell-expandable:not(.explanation-inline) > .nutshell-expandable-text,
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > :is(ul, ol):last-child > li:not(.explanation-inline) > .nutshell-expandable:not(.explanation-inline) > .nutshell-expandable-text { grid-column: 2; grid-row: 1; min-width: 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section > div > :is(ul, ol):last-child > li:last-child { margin-block-end: 0; }
+/* Clip the height animation without creating a focus-scrollable inner viewport. */
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow { overflow: clip; display: flow-root; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section p { margin-block: 12px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble :is(code, pre) { font-family: 'IBM Plex Mono', monospace; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is(.nutshell-bubble-from, .nutshell-bubble-overflow-embed-button) { display: none; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-close {
+  position: static; display: block; width: 44px; max-width: 100%; height: 24px; min-height: 24px;
+  margin: 4px auto 0; padding: 0; border: 0;
+  border-radius: 0; background: transparent; opacity: 1;
+  box-shadow: none;
+  color: var(--ink, #15252b); font: 500 22px/24px Barlow, sans-serif !important;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-close:hover {
+  background: transparent; color: var(--action, #b54128); box-shadow: none;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-close:focus-visible {
+  outline: 2px solid var(--ink, #15252b); outline-offset: -2px;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-visual] { margin: 16px 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-visual] figcaption { margin-bottom: 8px; font-size: 15px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1.4fr);
+  align-items: center; gap: 8px;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] > div {
+  min-width: 0; padding: 8px; border: 1px solid #827e6f; border-radius: 6px; background: var(--sheet, #fffdf5);
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] :is(small, strong) { display: block; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] small { font-size: 15px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] strong { font-weight: 600; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-cards], [data-explanation-steps], [data-explanation-sequence]) {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 16px 0; padding: 0; list-style: none;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-cards], [data-explanation-steps], [data-explanation-pipeline], [data-explanation-sequence]) > :is(div, li) {
+  min-width: 0; padding: 10px; border: 1px solid #827e6f; border-radius: 6px; background: var(--sheet, #fffdf5); margin: 0;
+}
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-cards], [data-explanation-pipeline], [data-explanation-sequence]) :is(small, strong) { display: block; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-cards], [data-explanation-pipeline]) :is(small, dt) { font-size: 15px; font-weight: 500; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-cards] dd { margin: 4px 0 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-cards="two"] > :nth-child(odd):last-child { grid-column: 1 / -1; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-cards="three"], [data-explanation-steps]) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-steps] { counter-reset: explanation-step; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-steps] li { counter-increment: explanation-step; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-steps] li::before { content: counter(explanation-step) ". "; font-weight: 600; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-steps] span { display: block; margin-top: 4px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-pipeline] { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 8px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-record] { margin: 0; border: 1px solid #827e6f; border-radius: 6px; background: var(--sheet, #fffdf5); padding: 4px 12px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-record] > div { display: grid; grid-template-columns: minmax(0, .6fr) minmax(0, 1.4fr); gap: 8px; padding-block: 8px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-record] > div + div { border-top: 1px solid #827e6f55; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-record] dt { font-size: 15px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-record] dd { margin: 0; min-width: 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-example], [data-explanation-result]) { border: 1px solid #827e6f; border-radius: 6px; padding: 12px; background: var(--sheet, #fffdf5); }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-result] { text-align: center; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-visual] code { background: none; color: inherit; padding: 0; overflow-wrap: anywhere; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-tokens] { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 16px 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-tokens] li { padding: 6px 10px; margin: 0; border: 1px solid #827e6f; border-radius: 6px; background: var(--sheet, #fffdf5); }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-tokens] code { background: none; padding: 0; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-sequence] { grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; text-align: center; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-sequence] > div { padding: 8px 2px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-sequence] small { font-size: 15px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-sequence] > div:last-child { border-style: dashed; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-note] { font-size: 15px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) #nutshell-close-all { display: none !important; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble [data-explanation-mark] { position: relative; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble :is(p, aside, blockquote, div, li)[data-explanation-mark="bracket"] { margin-block: 8px; margin-inline-start: 8px; padding-inline-start: 10px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble [data-explanation-mark="circle"] { margin-inline: 6px; }
+:is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble svg.rough-annotation { pointer-events: none !important; }
+@media (max-width: 600px) {
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble { padding-inline: 10px; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-bubble-overflow-section { padding-inline: 2px; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] { grid-template-columns: minmax(0, 1fr); }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] > span { justify-self: center; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] > :last-child { text-align: center; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-arrow] > span { display: inline-block; transform: rotate(90deg); }
+  /* Rotate plain symbols once; wrapped arrows rotate only their inner span.
+     The addition symbol in the name example keeps its original glyph. */
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-flow] > span:not([data-explanation-arrow]) { display: inline-block; transform: rotate(90deg); }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is([data-explanation-cards], [data-explanation-steps], [data-explanation-pipeline]) { grid-template-columns: minmax(0, 1fr); }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-pipeline] > [data-explanation-arrow] { text-align: center; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) [data-explanation-record] > div { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  /* Local close controls remain in each panel; a floating control covers phone prose. */
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) #nutshell-close-all { display: none !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) .nutshell-expandable { --nutshell-dot-up: .4em !important; --nutshell-dot-down: .7em !important; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is(.nutshell-ball-up, .nutshell-ball-down) { transition: none !important; }
+  :is(.seed-page-shell, .rd-page-shell, .guides-page-shell, [data-explanation-root], #redactorium-app) :is(.nutshell-bubble, .nutshell-bubble-overflow) { transition: none !important; }
+}

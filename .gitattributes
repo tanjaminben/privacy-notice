@@ -1,0 +1,2 @@
+# Preserve exact imported source/art/vendor bytes across platforms.
+* -text
