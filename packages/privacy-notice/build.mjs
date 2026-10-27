@@ -27,6 +27,7 @@ const exampleId=t=>'PrivacyNoticeExample'+t.id.replaceAll('-','')+'Topic';
 const openLink=t=>`<a class="notice-expand" href="#${nutshellId(t)}">:${esc(lessons[t.id].question)}</a>`;
 function plain(t) {
   const content=`<p>${esc(t.lead)}</p>`;
+  if(t.id==='specifics') return `<table class="notice-retention-table"><thead><tr><th scope="col">Record</th><th scope="col">Retention period</th></tr></thead><tbody><tr><th scope="row">Routine access logs</th><td>${esc(example.logs)}</td></tr><tr><th scope="row">Engagement records</th><td>Up to ${esc(example.engagement)}</td></tr><tr><th scope="row">Required order records</th><td>${esc(example.orders)}</td></tr></tbody></table>${content}`;
   if(t.id==='analytics') return `<div class="notice-recipe"><div class="notice-recipe-meta"><span><strong>Recipe</strong> Readership statistics</span><span><strong>Yield</strong> Aggregate page totals</span></div><div class="notice-recipe-grid"><section><h3>Ingredients</h3><p>${esc(t.facts[0].plain)}</p></section><section><h3>Method</h3><p>${esc(t.facts[1].plain)}</p></section></div><div class="notice-recipe-result"><h3>Storage</h3><p>${esc(t.facts[2].plain)}</p></div><p class="notice-recipe-choice"><strong>Purpose and choice.</strong> ${esc(t.facts[3].plain)}</p></div>`;
   return content;
 }
