@@ -175,3 +175,7 @@
  .notice-intro-controls,.notice-intro-art{display:none!important}
  .notice-demo .pe-detail-body,.notice-demo .pe-feature-body,.notice-demo .pe-dispatch-columns,.notice-demo .pe-feature-body .pn-specs{display:block!important;columns:auto!important}
 }
+
+.notice-retention-table { width: 100%; border-collapse: collapse; margin: 0 0 1em; font: inherit; }
+.notice-retention-table th, .notice-retention-table td { padding: .55em .65em; border-bottom: 1px solid currentColor; text-align: left; vertical-align: top; }
+.notice-retention-table tbody th { font-weight: 600; }

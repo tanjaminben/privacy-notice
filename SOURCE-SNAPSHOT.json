@@ -50,8 +50,8 @@
     },
     {
       "path": "packages/privacy-notice/build.mjs",
-      "bytes": 18816,
-      "sha256": "84978f03dd4426ef42e97e911b05ba7a55c394ae1df8ca37db78b7532cf02f14"
+      "bytes": 19261,
+      "sha256": "43abe6eb61be5dffc33cb57290876639e4438bcb355601d37e688890ecdb1420"
     },
     {
       "path": "packages/privacy-notice/source/config.js",
@@ -70,8 +70,8 @@
     },
     {
       "path": "packages/privacy-notice/source/facts.mjs",
-      "bytes": 32052,
-      "sha256": "e4ffa38768211108893f9445cce061dfa0c50ddc8598d6a921974d6e4ef333b1"
+      "bytes": 31932,
+      "sha256": "7e65cb30a42a87e34b69fd0f54e9a529ed33be4ca07680e3341afab80e1125b5"
     },
     {
       "path": "packages/privacy-notice/source/lessons.mjs",
@@ -80,8 +80,8 @@
     },
     {
       "path": "packages/privacy-notice/source/notice.css",
-      "bytes": 17101,
-      "sha256": "7aa55f6c3510615e96322f2c01ff0c1bf5b5b0dae7317282306bb1a0fc9fd9a6"
+      "bytes": 17416,
+      "sha256": "16642e3829ab48a819c51643dab845ddbae56f1e43fcafeb1a919b044049fa50"
     },
     {
       "path": "packages/privacy-notice/source/notice.js",
@@ -95,8 +95,8 @@
     },
     {
       "path": "packages/privacy-notice/templates/notice.html",
-      "bytes": 14739,
-      "sha256": "3ae9a3a9e2a524714df35390b66af4d982f4abad257430da4e02608c2ff2877a"
+      "bytes": 14710,
+      "sha256": "23cc666188252bab4f756001339e584e32fde170fc9974ccd76b6733ad09554f"
     },
     {
       "path": "packages/privacy-notice/verify.mjs",
@@ -443,5 +443,31 @@
     "site/guides/privacy-notice/art/vegetable-spread-480.webp",
     "site/guides/privacy-notice/art/vegetable-spread-800.webp",
     "site/guides/privacy-notice/art/vegetables-square.png"
-  ]
+  ],
+  "localChanges": {
+    "reviewId": "ben-tan-prose-20261026-33459e7e",
+    "committed": false,
+    "changes": [
+      {
+        "path": "packages/privacy-notice/build.mjs",
+        "baseSha256": "84978f03dd4426ef42e97e911b05ba7a55c394ae1df8ca37db78b7532cf02f14",
+        "localSha256": "43abe6eb61be5dffc33cb57290876639e4438bcb355601d37e688890ecdb1420"
+      },
+      {
+        "path": "packages/privacy-notice/source/facts.mjs",
+        "baseSha256": "e4ffa38768211108893f9445cce061dfa0c50ddc8598d6a921974d6e4ef333b1",
+        "localSha256": "7e65cb30a42a87e34b69fd0f54e9a529ed33be4ca07680e3341afab80e1125b5"
+      },
+      {
+        "path": "packages/privacy-notice/source/notice.css",
+        "baseSha256": "7aa55f6c3510615e96322f2c01ff0c1bf5b5b0dae7317282306bb1a0fc9fd9a6",
+        "localSha256": "16642e3829ab48a819c51643dab845ddbae56f1e43fcafeb1a919b044049fa50"
+      },
+      {
+        "path": "packages/privacy-notice/templates/notice.html",
+        "baseSha256": "3ae9a3a9e2a524714df35390b66af4d982f4abad257430da4e02608c2ff2877a",
+        "localSha256": "23cc666188252bab4f756001339e584e32fde170fc9974ccd76b6733ad09554f"
+      }
+    ]
+  }
 }
