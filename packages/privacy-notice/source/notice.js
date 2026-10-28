@@ -6,13 +6,15 @@ const topics=[...root.querySelectorAll('[data-pe-topic]')];
 const links=[...root.querySelectorAll('[data-pe-topic-link]')];
 const edition=new URL(location.href).searchParams.get('edition')==='full'?'full':'plain';
 root.dataset.edition=edition;
+root.classList.toggle('grocery',edition==='plain');
+root.classList.toggle('newspaper',edition==='full');
 root.dataset.ready='true';
 content.querySelectorAll('.pe-editions').forEach(el=>el.hidden=false);
 content.querySelectorAll('[data-pe-edition]').forEach(link=>{
   if(link.dataset.peEdition===edition) link.setAttribute('aria-current','page');
 });
-// Actual navigations preserve browser Back, reload, and Nutshell's page-URL cache.
-// The current topic travels with an edition change; no preference storage is needed.
+// Edition controls live at the top. Their native links start the other edition
+// at the top too, without carrying a stale section fragment across.
 function currentTopic() {
   const addressed=topics.find(el=>'#'+el.id===location.hash);
   if(addressed) {
@@ -22,15 +24,6 @@ function currentTopic() {
   const above=topics.filter(el=>el.getBoundingClientRect().top<=innerHeight*.38);
   return above.at(-1)?.id||'';
 }
-function editionURL(value) {
-  const url=new URL(location.href);
-  url.searchParams.set('edition',value);
-  url.hash=currentTopic()||(topics.some(el=>'#'+el.id===location.hash)?location.hash:'');
-  return url;
-}
-content.querySelectorAll('[data-pe-edition]').forEach(link=>link.addEventListener('click',()=>{
-  link.href=editionURL(link.dataset.peEdition).href;
-}));
 explanations.start(content);
 let frame;
 function updateRail() {
@@ -46,5 +39,4 @@ updateRail();
 links.forEach(link=>link.addEventListener('click',()=>{
   document.querySelector(link.hash)?.focus({preventScroll:true});
 }));
-// Source art layers share the original layout's movement. Respect reduced motion.
 root.querySelector('[data-pe-announcement]').textContent=`${edition==='plain'?'Plain-language grocery flyer':'Detailed newspaper'} edition. Fifteen topics describe the same fictional practices.`;

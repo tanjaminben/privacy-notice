@@ -1,3 +1,4 @@
+@import url("project-identities.css");
 @font-face { font-family: Barlow; src: url("fonts/barlow-400.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
 @font-face { font-family: Barlow; src: url("fonts/barlow-600.ttf") format("truetype"); font-style: normal; font-weight: 600; font-display: swap; }
 @font-face { font-family: Barlow; src: url("fonts/barlow-700.ttf") format("truetype"); font-style: normal; font-weight: 700; font-display: swap; }
@@ -46,30 +47,34 @@
   --bt-palette-olive: #687451;
   --bt-palette-slate: #4a5860;
   --bt-palette-deep-teal: #386975;
-  --bt-icon-machine: var(--bt-palette-machine-teal);
-  --bt-icon-safeseed: var(--forest);
-  --bt-icon-redactorium: var(--bt-palette-slate);
-  --bt-icon-comics: var(--bt-palette-plum);
-  --bt-icon-posters: var(--bt-palette-navy);
+
+
+
+
+
   --bt-icon-tools: var(--ink);
-  --bt-icon-skip-ad: var(--bt-palette-muted-blue);
+
+  --bt-icon-certification: #f4a7c3;
+
+
   --bt-icon-safelist: var(--bt-palette-muted-blue);
-  --bt-icon-council: var(--bt-palette-muted-violet);
+
   --bt-icon-guides: var(--bt-palette-olive);
-  --bt-icon-privacy-notice: var(--bt-palette-deep-teal);
+
   --bt-icon-on-dark: var(--sheet); --bt-icon-on-light: var(--ink);
   /* Each page keeps its title strokes a different color from its icon tile. */
   --bt-title-accent-landing: #526f91;
   --bt-title-accent-work: #4a5860;
-  --bt-title-accent-safeseed: #5f8067;
-  --bt-title-accent-redactorium: #2e7d74;
-  --bt-title-accent-council: #214e3e;
-  --bt-title-accent-comics: #687451;
-  --bt-title-accent-posters: #8b5a83;
+
+
+
+
+
   /* Warm action color is reserved for buttons; other UI roles stay quiet. */
   --ui-accent-neutral: var(--bt-palette-slate); --ui-highlight: #dce5d8;
   --ui-error: #8d4b5a; --ui-navigation: var(--ink); --ui-focus: var(--ink);
   --button-min-height: 48px; --button-label-min: 18px; --button-radius: 8px;
+  --button-highlight-shadow: 4px 4px 0 #15252b;
   --header-height: 64px; --footer-height: 64px; --page-padding: 24px; --section-gap: 24px; --card-height: 96px;
   /* Header, footer, padding, gap, and complete work row. Readable floors permit
      natural scrolling at extreme zoom or unusually short viewport heights. */
@@ -100,6 +105,19 @@ button, .button { cursor: pointer; }
 .skip-link:focus { transform: none; opacity: 1; }
 .site-header { border-bottom: 1px solid var(--ink); }
 .header-inner { width: var(--page-width); height: var(--header-height); margin-inline: auto; display: flex; align-items: center; gap: 44px; position: relative; z-index: 3; }
+/* Match the full viewport on every desktop route without moving page content.
+   Stable root gutters also shrink vw, so the shared enhancement supplies the
+   physical CSS viewport width. This repeats the existing composition limits
+   only for the header; body/footer scale, art and logo-slot rules stay intact. */
+@media (min-width: 1001px) {
+  .header-inner {
+    --header-scale: clamp(.38px, min(.78px, calc(var(--header-viewport-width, 100vw) / 2400), calc((100svh - var(--vertical-reserve)) / var(--cabinet-reference-height))), .78px);
+    --header-cap: max(960px, calc(1800 * var(--header-scale)));
+    width: min(calc(var(--header-viewport-width, 100vw) - 64px), var(--header-cap));
+    margin-inline-start: max(32px, calc((var(--header-viewport-width, 100vw) - var(--header-cap)) / 2));
+  }
+}
+
 .brand { flex: none; width: 64px; height: 48px; display: grid; place-items: center; }
 /* Offset the master's transparent padding so the painted mark aligns with the page. */
 .brand img { width: 80px; height: auto; object-fit: contain; transform: translate(-17.2%, -8%); }
@@ -121,7 +139,30 @@ button, .button { cursor: pointer; }
   background-repeat: no-repeat;
   mix-blend-mode: darken;
 }
-.brand[data-preview-logo="01"] .logo-study-crop { transform: scale(.95); transform-origin: left center; }
+/* Direct master reductions avoid asking the browser to shrink the entire study
+   board into a small header. Keep the approved slot, transform and blend. */
+.brand[data-preview-logo="01"] .logo-study-crop {
+  transform: scale(.95); transform-origin: left center;
+  background-image: url("assets/bt-soft-upright-01-44-2x-d499ca3895f0.png");
+  background-image: image-set(
+    url("assets/bt-soft-upright-01-44-1x-8de6f0b2bfff.png") 1x,
+    url("assets/bt-soft-upright-01-44-2x-d499ca3895f0.png") 2x,
+    url("assets/bt-soft-upright-01-44-3x-ab15e44a48bc.png") 3x,
+    url("assets/bt-soft-upright-01-44-4x-adc2be220271.png") 4x
+  );
+  background-size: 100% 100%; background-position: 0 0;
+}
+@media (max-width: 1000px), (min-width: 1001px) and (max-height: 780px) {
+  .brand[data-preview-logo="01"] .logo-study-crop {
+    background-image: url("assets/bt-soft-upright-01-40-2x-9514ec0848cf.png");
+    background-image: image-set(
+      url("assets/bt-soft-upright-01-40-1x-9036f3a7bceb.png") 1x,
+      url("assets/bt-soft-upright-01-40-2x-9514ec0848cf.png") 2x,
+      url("assets/bt-soft-upright-01-40-3x-dc50163d2f4d.png") 3x,
+      url("assets/bt-soft-upright-01-40-4x-0b2b9f15a7c3.png") 4x
+    );
+  }
+}
 #site-nav { display: flex; align-items: center; gap: 32px; font-size: 20px; line-height: 28px; font-weight: 600; }
 #site-nav a, #site-nav summary { display: flex; align-items: center; min-width: 44px; min-height: 44px; text-decoration: none; }
 #site-nav a:hover, #site-nav summary:hover { text-decoration: underline; text-decoration-color: var(--ui-navigation); text-underline-offset: 6px; }
@@ -146,6 +187,8 @@ button, .button { cursor: pointer; }
 #site-nav .nav-submenu a { gap: 12px; padding: 10px 12px; border-radius: 4px; }
 .nav-icon { display: grid; place-items: center; flex: 0 0 28px; width: 28px; height: 28px; border-radius: 6px; }
 .nav-icon img { flex: none; }
+.nav-icon-profile { background: var(--sheet); border: 1px solid #827e6f55; }
+.nav-submenu-connect { width: 232px; }
 .nav-icon-seed { background: var(--bt-icon-safeseed); }
 .nav-icon-redactor { background: var(--bt-icon-redactorium); }
 .nav-icon-guide { background: var(--bt-icon-guides); }
@@ -205,8 +248,10 @@ h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u
 .name-burst img { width: calc(58 * var(--u)); height: auto; }
 .role { font-size: calc(66 * var(--u)); line-height: calc(72 * var(--u)); font-weight: 900; margin: calc(14 * var(--u)) 0 0; }
 .intro { width: max(460px, calc(875 * var(--u))); max-width: 100%; margin: max(12px, calc(14 * var(--u))) 0 0; font-size: max(18px, calc(36 * var(--u))); line-height: max(24px, calc(44 * var(--u))); text-wrap: balance; }
-/* Give the longer machine label a little more room for optical balance. */
-.hero-actions { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: max(12px, calc(20 * var(--u))); width: max(460px, calc(875 * var(--u))); max-width: 100%; margin-top: max(20px, calc(32 * var(--u))); }
+.hero-actions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: max(12px, calc(20 * var(--u))); width: max(460px, calc(875 * var(--u))); max-width: 100%; margin-top: max(20px, calc(32 * var(--u))); }
+.hero-actions .button-primary { padding-block: 8px; }
+.hero-actions .button-primary span { flex: none; }
+.hero-actions .button-primary .work-launch-icon { flex: none; width: max(32px, calc(40 * var(--u))); height: auto; }
 .button { min-height: max(var(--button-min-height), calc(80 * var(--u))); border-radius: var(--button-radius); display: flex; align-items: center; justify-content: center; gap: max(8px, calc(16 * var(--u))); text-decoration: none; font-size: max(var(--button-label-min), calc(30 * var(--u))); line-height: 1.2; font-weight: 700; transition: background-color 150ms ease, box-shadow 150ms ease; }
 .button-primary { color: var(--sheet); background: var(--action); padding: 10px max(10px, calc(20 * var(--u))); }
 .button-primary span { flex: 1; text-align: center; white-space: nowrap; }
@@ -215,6 +260,37 @@ h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u
 .button-secondary { border: 2px solid var(--ink); padding: 8px max(10px, calc(20 * var(--u))); background: var(--paper); white-space: nowrap; }
 .button-secondary img { width: max(26px, calc(40 * var(--u))); height: auto; }
 .button-secondary:hover { background: var(--sheet); box-shadow: 0 3px 0 var(--ink); }
+/* Shared action feedback, matching the PII De-identifier's solid ink edge.
+   Keep navigation, filters and text links outside this action-button contract.
+   Explicit adapter selectors beat native tool resets without changing engines. */
+body .button:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible):not(:active),
+body #privacy-guides-app .button:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible):not(:active),
+body #redactorium-app :is(.btn-forest, .btn-ghost-ink):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible):not(:active),
+body .reader-actions :is(a, button):not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible):not(:active),
+body [data-action-button]:not(:disabled):not([aria-disabled="true"]):is(:hover, :focus-visible):not(:active) {
+  box-shadow: var(--button-highlight-shadow);
+  transform: translate(-1px, -1px);
+}
+body .button:is(:active, :disabled, [aria-disabled="true"]),
+body #privacy-guides-app .button:is(:active, :disabled, [aria-disabled="true"]),
+body #redactorium-app :is(.btn-forest, .btn-ghost-ink):is(:active, :disabled, [aria-disabled="true"]),
+body .reader-actions :is(a, button):is(:active, :disabled, [aria-disabled="true"]),
+body [data-action-button]:is(:active, :disabled, [aria-disabled="true"]) {
+  box-shadow: none;
+  transform: none;
+}
+/* Landing CTA only: a larger standalone machine glyph, without its paper tile. */
+.hero-actions .button-secondary { padding-block: 4px; }
+body .hero-actions .button-secondary .machine-launch-icon[data-project="machine"] { flex: none; width: max(32px, calc(40 * var(--u))); height: max(32px, calc(40 * var(--u))); background: transparent; border: 0; }
+body .hero-actions .button-secondary .machine-launch-icon[data-project="machine"] img { width: 100%; height: 100%; }
+@media (min-width: 1001px) {
+  /* Desktop navigation rule: every item stays on one line, including nested
+     items. Let menus grow to their longest label; retain phone wrapping below. */
+  .nav-submenu { width: max-content; min-width: 370px; max-width: calc(100vw - 40px); }
+  .nav-submenu-connect { min-width: 280px; }
+  #site-nav .nav-submenu :is(a, summary) { white-space: nowrap; }
+  .nav-submenu .nav-label { text-wrap: nowrap; }
+}
 .machine-scene { min-width: 0; display: flex; justify-content: center; }
 .cabinet {
   width: calc(655.5 * var(--u)); height: auto;
@@ -232,7 +308,7 @@ h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u
 .work-icon img { width: clamp(34px, calc(55 * var(--u)), 44px); height: auto; }
 .work-icon-seed { background: var(--bt-icon-safeseed); }
 .work-icon-redactor { background: var(--bt-icon-redactorium); }
-.featured-work .work-icon-redactor { background: #b54128; }
+.featured-work .work-icon-redactor { background: var(--bt-icon-redactorium); }
 .work-icon-guide { background: var(--bt-icon-guides); }
 .work-icon-privacy-notice { background: var(--bt-icon-privacy-notice); }
 .work-icon-comics { background: var(--bt-icon-comics); }
@@ -247,6 +323,10 @@ h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u
 .footer-inner { width: var(--page-width); min-height: calc(var(--footer-height) - 1px); margin-inline: auto; display: flex; align-items: center; justify-content: space-between; gap: 12px 24px; font-size: 16px; line-height: 24px; }
 .site-footer a { min-height: 44px; display: inline-flex; align-items: center; text-decoration: underline; text-decoration-color: #827e6f80; text-underline-offset: 4px; }
 .site-footer a:hover { text-decoration-color: var(--ui-navigation); }
+.footer-contacts { display: flex; align-items: center; gap: 24px; }
+.footer-support { gap: 8px; white-space: nowrap; }
+.footer-support img { width: 18px; height: 18px; object-fit: contain; }
+.footer-privacy-short, .footer-email-icon { display: none; }
 @media (min-width: 1001px) and (max-height: 780px) {
   :root { --header-height: 56px; --footer-height: 56px; --page-padding: 16px; --section-gap: 18px; --card-height: 88px; --vertical-reserve: 288px; }
   /* Leave room for two-line featured titles without reducing their type size. */
@@ -282,7 +362,7 @@ h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u
   .hero-copy { padding-inline: 20px; width: 100%; max-width: 440px; margin-inline: auto; }
   .name-lockup { width: 100%; height: 82px; }
   h1 { font-size: 64px; line-height: 72px; }
-  .name-underline { top: 60px; }
+  .name-underline { top: 66px; }
   .name-underline img { width: 228px; }
   .name-burst { left: 232px; top: 10px; }
   .name-burst img { width: 26px; }
@@ -307,42 +387,39 @@ h1 { margin: 0; font-size: calc(172 * var(--u)); line-height: calc(184 * var(--u
   .work-purpose { font-size: 16px; line-height: 20px; }
   .chevron { width: 22px; }
   .footer-inner { width: calc(100% - 40px); }
+  .footer-inner > a { flex: none; white-space: nowrap; }
+  .footer-contacts { flex: none; gap: 16px; }
+  .footer-contacts > a { flex: none; white-space: nowrap; }
+}
+/* 488.14px measured fit: full16px labels,16px contact gap,24px group gap,
+   40px outer insets and the worst-case15px reserved scrollbar gutter. */
+@media (max-width: 488px) {
+  .footer-inner { min-height: 60px; flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; padding-block: 8px; }
+  .footer-contacts { gap: 8px; }
+  .footer-inner > a, .footer-contacts > a { min-width: 44px; min-height: 44px; }
+  .footer-privacy-full, .footer-email-full { display: none; }
+  .footer-privacy-short { display: inline; }
+  .footer-email-icon { display: block; }
+  .site-footer a.footer-email { width: 44px; justify-content: center; }
 }
 @media (max-width: 359px) {
   h1 { font-size: 60px; }
   .name-underline img { width: 214px; }
   .name-burst { left: 218px; }
   .role { font-size: 27px; line-height: 31px; }
-  .footer-inner { flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 0; padding-block: 8px; }
+  .footer-inner { width: calc(100% - 24px); }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; scroll-behavior: auto !important; }
 }
 
-/* Ben-approved project identities. Explicit nonhome scopes preserve the frozen
-   homepage's icon colors and assets; Shop remains outside this release. */
-:is(body.work-page-shell, body.seed-page-shell, body.rd-page-shell,
-    body.guides-page-shell, body.comic-panels-page, body.posters-page,
-    body.notice-page-shell, body.about-page-shell) {
-  --bt-icon-machine: #2e7d74;
-  --bt-icon-privacy-notice: #a12c50;
-  --bt-icon-comics: #245ea8;
-  --bt-icon-posters: #f2c551;
-  --bt-icon-redactorium: #303030;
-  --bt-icon-council: #6744a2;
-  --bt-icon-safeseed: #3f692a;
-  --bt-title-accent-safeseed: #a12c50;
-  --bt-title-accent-redactorium: #245ea8;
-  --bt-title-accent-council: #00875b;
-  --bt-title-accent-comics: #3f692a;
-  --bt-title-accent-posters: #6744a2;
-}
-body.notice-page-shell {
-  --bt-title-accent-privacy-notice-demo: #2e7d74;
-  --page-title-accent: var(--bt-title-accent-privacy-notice-demo);
-}
+
 /* Keep these two titles' whiskers beside their final word at every width. */
 :is(body.notice-page-shell, body.guides-page-shell) .page-title-end { padding-right: 32px; }
 @media (max-width: 600px) {
   :is(body.notice-page-shell, body.guides-page-shell) .page-title-end { padding-right: 22px; }
 }
+
+/* Shared CIPT bindings; the canonical roles are declared once above. */
+
+.nav-icon-cipt, .work-icon-cipt { background: var(--bt-icon-cipt-studio); }

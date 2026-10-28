@@ -7,45 +7,70 @@
         <span>Menu</span><img src="/assets/phone-menu.svg" width="22" height="22" alt="">
       </button>
       <nav id="site-nav" aria-label="Main navigation">
-        <details class="nav-group">
+        <details class="nav-group" name="main-navigation">
           <summary aria-controls="work-menu">Work<span class="nav-caret" aria-hidden="true"></span></summary>
           <div class="nav-submenu" id="work-menu">
-            <a class="nav-featured" href="/machine/?entry=instant"><span class="nav-icon"><img src="/assets/bending-machine-tile.svg" width="28" height="28" alt=""></span><span>Bending Machine</span></a>
+            <a class="nav-featured" href="/machine/?entry=instant"><span class="nav-icon" data-project="machine"><img src="/assets/projects/machine-navigation.svg?v=1ade82259727" width="28" height="28" alt=""></span><span>Bending Machine</span></a>
             <details class="nav-category">
-              <summary aria-controls="tools-menu"><span class="nav-icon"><img src="/assets/nav-tools.svg" width="28" height="28" alt=""></span><span class="nav-label">Tools</span><span class="nav-caret" aria-hidden="true"></span></summary>
+              <summary aria-controls="tools-menu"><span class="nav-icon" data-project="tools"><img src="/assets/projects/tools.svg?v=1ade82259727" width="28" height="28" alt=""></span><span class="nav-label">Tools</span><span class="nav-caret" aria-hidden="true"></span></summary>
               <div class="nav-category-items" id="tools-menu">
-                <a href="/tools/redactorium/"><span class="nav-icon nav-icon-redactor"><img src="/assets/work/redactorium.svg" width="21" height="21" alt=""></span><span class="nav-label">PII De-identifier</span></a>
-                <a href="/tools/privacy-guides/"><span class="nav-icon nav-icon-council"><img src="/assets/work/council.svg" width="21" height="21" alt=""></span><span class="nav-label">Privacy Decision Guides</span></a>
-                <a href="/tools/safeseed/"><span class="nav-icon nav-icon-seed"><img src="/assets/desktop-leaf.svg" width="21" height="21" alt=""></span><span class="nav-label">Test Data Generator</span></a>
+                <a href="/tools/redactorium/"><span class="nav-icon nav-icon-redactor" data-project="redactorium"><img src="/assets/projects/redactorium.svg?v=1ade82259727" width="21" height="21" alt=""></span><span class="nav-label">PII De-identifier</span></a>
+                <a href="/tools/privacy-guides/"><span class="nav-icon nav-icon-council" data-project="council"><img src="/assets/projects/council.svg?v=1ade82259727" width="21" height="21" alt=""></span><span class="nav-label">Privacy Decision Guides</span></a>
+                <a href="/tools/safeseed/"><span class="nav-icon nav-icon-seed" data-project="safeseed"><img src="/assets/projects/safeseed.svg?v=1ade82259727" width="21" height="21" alt=""></span><span class="nav-label">Test Data Generator</span></a>
               </div>
             </details>
             <details class="nav-category">
-              <summary aria-controls="guides-menu"><span class="nav-icon nav-icon-guide"><img src="/assets/desktop-book.svg" width="24" height="24" alt=""></span><span class="nav-label">Guides</span><span class="nav-caret" aria-hidden="true"></span></summary>
+              <summary aria-controls="guides-menu"><span class="nav-icon nav-icon-guide" data-project="guides"><img src="/assets/projects/guides.svg?v=1ade82259727" width="24" height="24" alt=""></span><span class="nav-label">Guides</span><span class="nav-caret" aria-hidden="true"></span></summary>
               <div class="nav-category-items" id="guides-menu">
-                <a href="/guides/privacy-notice/"><span class="nav-icon nav-icon-privacy-notice"><img src="/assets/work/privacy-notice.svg" width="21" height="21" alt=""></span><span class="nav-label">Anatomy of a <span class="nav-title-part">Privacy Notice</span></span></a>
-                <a href="/guides/comic-panels/"><span class="nav-icon nav-icon-comics"><img src="/assets/work/comic-panels-cobalt.svg" width="21" height="21" alt=""></span><span class="nav-label">Comic Panels</span></a>
-                <a href="/guides/movie-posters/"><span class="nav-icon nav-icon-posters"><img src="/assets/work/movie-posters-yellow.svg" width="21" height="21" alt=""></span><span class="nav-label">Movie Posters</span></a>
+                <a href="/guides/privacy-notice/"><span class="nav-icon nav-icon-privacy-notice" data-project="privacy-notice"><img src="/assets/projects/privacy-notice.svg?v=1ade82259727" width="21" height="21" alt=""></span><span class="nav-label">Anatomy of a <span class="nav-title-part">Privacy Notice</span></span></a>
               </div>
             </details>
-            <a class="nav-overview" href="/work/"><span class="nav-icon"><img src="/assets/nav-work-grid.svg" width="28" height="28" alt=""></span><span>View all work</span></a>
+            <details class="nav-category">
+              <summary aria-controls="training-menu"><span class="nav-icon" data-project="training"><img src="/assets/projects/training.svg?v=1ade82259727" width="28" height="28" alt=""></span><span class="nav-label">Training &amp; Awareness</span><span class="nav-caret" aria-hidden="true"></span></summary>
+              <div class="nav-category-items" id="training-menu">
+                <a href="/guides/comic-panels/"><span class="nav-icon nav-icon-comics" data-project="comics"><img src="/assets/projects/comics.svg?v=1ade82259727" width="21" height="21" alt=""></span><span class="nav-label">Comic Panels</span></a>
+                <a href="/guides/movie-posters/"><span class="nav-icon nav-icon-posters" data-project="posters"><img src="/assets/projects/posters.svg?v=1ade82259727" width="21" height="21" alt=""></span><span class="nav-label">Movie Posters</span></a>
+                <a href="/stickers/"><span class="nav-icon" data-project="stickers"><img src="/assets/projects/stickers.svg?v=1ade82259727" width="24" height="24" alt=""></span><span class="nav-label">Stickers</span></a>
+              </div>
+            </details>
+            <details class="nav-category">
+              <summary aria-controls="certification-menu"><span class="nav-icon" data-project="certification"><img src="/assets/projects/certification.svg?v=1ade82259727" width="28" height="28" alt=""></span><span class="nav-label">Certification</span><span class="nav-caret" aria-hidden="true"></span></summary>
+              <div class="nav-category-items" id="certification-menu">
+                <a href="/certification/cipt-studio/"><span class="nav-icon nav-icon-cipt" data-project="cipt-studio"><img src="/assets/projects/cipt-studio.svg?v=1ade82259727" width="24" height="24" alt=""></span><span class="nav-label">CIPT Studio</span></a>
+              </div>
+            </details>
+            <a class="nav-overview" href="/work/"><span class="nav-icon" data-project="work"><img src="/assets/projects/work.svg?v=1ade82259727" width="28" height="28" alt=""></span><span>View all work</span></a>
           </div>
         </details>
-        <details class="nav-group">
+        <details class="nav-group" name="main-navigation">
           <summary aria-controls="play-menu">Play<span class="nav-caret" aria-hidden="true"></span></summary>
           <div class="nav-submenu nav-submenu-play" id="play-menu">
-            <a href="https://skip-ad.xyz/"><span class="nav-icon"><img src="/assets/nav-popup-panic.svg" width="28" height="28" alt=""></span><span>SKIP AD: <span class="nav-title-part">Popup Panic</span></span></a>
-            <a href="/atlas"><span class="nav-icon"><img src="/assets/nav-anatomy.svg" width="28" height="28" alt=""></span><span>Anatomy of a Bending Machine</span></a>
-            <a href="/encyclopedia"><span class="nav-icon"><img src="/assets/nav-mechanica.svg" width="28" height="28" alt=""></span><span>Mechanica Absurdia</span></a>
+            <a href="/atlas"><span class="nav-icon" data-project="anatomy"><img src="/assets/projects/anatomy.svg?v=1ade82259727" width="28" height="28" alt=""></span><span>Anatomy of a Bending Machine</span></a>
+            <a href="/encyclopedia"><span class="nav-icon" data-project="mechanica"><img src="/assets/projects/mechanica.svg?v=1ade82259727" width="28" height="28" alt=""></span><span>Mechanica Absurdia</span></a>
+            <a href="https://mildly-feral.ben-tan.com"><span class="nav-icon"><img src="/assets/projects/mildly-feral.svg?v=1cc3fb906493" width="28" height="28" alt=""></span><span>Mildly Feral</span></a>
+            <a href="https://btanjamin.itch.io/skip-ad"><span class="nav-icon" data-project="skip-ad"><img src="/assets/projects/skip-ad.svg?v=1ade82259727" width="28" height="28" alt=""></span><span>SKIP AD: <span class="nav-title-part">Popup Panic</span></span></a>
           </div>
         </details>
-        <a href="/shop.html">Shop</a>
-        <a href="/about.html">About</a>
+        <details class="nav-group" name="main-navigation">
+          <summary aria-controls="connect-menu">Connect<span class="nav-caret" aria-hidden="true"></span></summary>
+          <div class="nav-submenu nav-submenu-connect" id="connect-menu">
+            <a href="https://www.linkedin.com/in/tanjaminben/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (opens in a new tab)"><span class="nav-icon nav-icon-profile"><img src="/assets/nav-linkedin.svg" width="21" height="21" alt=""></span><span>LinkedIn</span></a>
+
+            <a href="https://x.com/tanjaminben" target="_blank" rel="noopener noreferrer" aria-label="X (opens in a new tab)"><span class="nav-icon nav-icon-profile"><img src="/assets/nav-x.svg" width="21" height="21" alt=""></span><span>X</span></a>
+          </div>
+        </details>
+        <a href="/about">About</a>
       </nav>
     </div>
   </header>
 <footer class="site-footer">
     <div class="footer-inner">
-      <a href="https://benjamin-tan.io/privacy">Privacy notice</a>
-      <a href="mailto:hello@ben-tan.com">hello@ben-tan.com</a>
+      <a href="/privacy" aria-label="Privacy notice"><span class="footer-privacy-full">Privacy notice</span><span class="footer-privacy-short">Privacy</span></a>
+      <div class="footer-contacts">
+        <a class="footer-support" href="https://ko-fi.com/itsbent" target="_blank" rel="noopener noreferrer" aria-label="Throw money at me (opens in a new tab)"><img src="/assets/nav-kofi.png" width="18" height="18" alt=""><span>Throw money at me</span></a>
+        <a class="footer-email" href="mailto:hello@ben-tan.com" aria-label="Email Ben Tan at hello@ben-tan.com" title="hello@ben-tan.com"><span class="footer-email-full">hello@ben-tan.com</span><svg class="footer-email-icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><!-- Lucide Mail, ISC License. Copyright (c) 2026 Lucide Icons and Contributors.
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. --><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg></a>
+      </div>
     </div>
   </footer>

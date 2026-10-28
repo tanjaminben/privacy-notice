@@ -6,8 +6,11 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {topics} from './source/facts.mjs';
 import {lessons} from './source/lessons.mjs';
+import {teaching} from './source/teaching.mjs';
 const here=path.dirname(fileURLToPath(import.meta.url));
-const root=path.resolve(here,'../..'), site=path.join(root,'site');
+const index=process.argv.indexOf('--output-root');
+if(index>=0&&!process.argv[index+1])throw Error('--output-root requires a directory');
+const root=index<0?path.resolve(here,'../..'):path.resolve(process.argv[index+1]), site=path.join(root,'site');
 const html=fs.readFileSync(path.join(site,'guides/privacy-notice/index.html'),'utf8');
 
 const sha=b=>createHash('sha256').update(b).digest('hex');
@@ -19,10 +22,14 @@ assert(!/data-notice-edition|data-notice-print|Print full notice|>Reading editio
 for(const t of topics) {
   const lesson=lessons[t.id];
   assert(lesson.question && lesson.why && lesson.include && lesson.avoid && lesson.driver && lesson.refs.length);
-  assert(html.includes(esc(lesson.question)),`Missing lesson trigger ${t.id}`);
-  for(const [label,url] of lesson.refs) {
-    assert(/^https:\/\/(eur-lex\.europa\.eu|ico\.org\.uk|oag\.ca\.gov|www\.ftc\.gov)\//.test(url),`Unexpected source ${url}`);
+  assert(html.includes(esc(lesson.question)),`Missing visible lesson ${t.id}`);
+  const guidance=teaching[t.id];
+  assert(guidance.heading&&guidance.classification&&guidance.requirement&&guidance.example&&guidance.practice&&guidance.refs.length);
+  for(const text of [guidance.heading,guidance.classification,guidance.requirement,guidance.example,guidance.practice])assert(html.includes(esc(text)),`Missing teaching content ${t.id}`);
+  for(const [label,url] of guidance.refs) {
+    assert(/^https:\/\/(www\.legislation\.gov\.uk|eur-lex\.europa\.eu|ico\.org\.uk|commission\.europa\.eu|cppa\.ca\.gov|www\.ecfr\.gov|www\.ftc\.gov)\//.test(url),`Unexpected source ${url}`);
     assert(html.includes(esc(label)),`Missing named source ${label}`);
+    assert(html.includes(esc(url)),`Missing source URL ${url}`);
   }
 }
 assert.deepEqual([...html.matchAll(/data-pe-topic data-detail-title/g)].length,15);
@@ -39,6 +46,9 @@ for(const t of topics) for(const f of t.facts) {
 assert(!/<dialog\b|data-pe-open-detail|aria-haspopup="dialog"/.test(html),'no detail modal');
 assert(!/Advokat|Ducket LLC|Mailgun|Fastly|Fourthwall|support@|data-portal/i.test(html),'no retired operational copy');
 assert(!/<form\b|<input\b|mailto:privacy@example/.test(html),'fictional contact and service are non-operational');
+assert(!/href="#:[^"]+"|<h2>:x /.test(html),'essential lessons do not depend on Nutshell disclosures');
+assert.equal([...html.matchAll(/class="lesson"/g)].length,15,'all writing lessons remain in the document');
+assert.equal([...html.matchAll(/data-fallback-fact="/g)].length,58,'complete plain wording has a no-script fallback');
 assert(!/{{[^}]+}}/.test(html),'all template fields resolved');
 assert(html.includes('Example Studio is fictional.'));
 assert(html.includes('href="/privacy"'),'actual privacy link stays separate');
@@ -55,5 +65,5 @@ const ledger=['# Paired content review','', 'Fictional demonstration. These are 
 fs.writeFileSync(path.join(here,'CONTENT-MAP.md'),ledger+'\n');
 console.log(JSON.stringify({topics:topics.length,pairedFacts:facts.length,nutshellSections:nutshells.size,localReferences:paths.size,externalAssets:'validated by verify-assets',outputSha256:sha(html)},null,2));
 fs.writeFileSync(path.join(here,'LESSON-MAP.md'),['# Anatomy of a Privacy Notice — lessons','',
-  'Sources checked October 20, 2026. EU GDPR baseline; UK and US examples are labeled. Fictional processing values are illustrative.',
-  '',...topics.flatMap(t=>{const l=lessons[t.id];return [`## ${l.question}`,'',l.why,'',`Include: ${l.include}`,'',`Pitfall: ${l.avoid}`,'',`Legal driver: ${l.driver}`,'',...l.refs.map(([label,url])=>`- [${label}](${url})`),''];})].join('\n')+'\n');
+  'Primary sources checked October 27, 2026. EU GDPR baseline; UK and US examples are labeled. Fictional processing values are illustrative.',
+  '',...topics.flatMap(t=>{const l=lessons[t.id],g=teaching[t.id];return [`## ${l.question}`,'',l.why,'',`${g.classification}: ${g.requirement}`,'',`Example: ${g.example}`,'',`Drafting advice: ${g.practice}`,'',...g.refs.map(([label,url])=>`- [${label}](${url})`),''];})].join('\n')+'\n');

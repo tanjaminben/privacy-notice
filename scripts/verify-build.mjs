@@ -1,0 +1,10 @@
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {spawnSync} from 'node:child_process';
+const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const index=process.argv.indexOf('--output-root');
+if(index>=0&&!process.argv[index+1])throw Error('--output-root requires a directory');
+const root=index<0?repo:path.resolve(process.argv[index+1]);
+const result=spawnSync(process.execPath,[path.join(repo,'scripts/verify-assets.mjs'),'--root',root],{stdio:'inherit'});
+if(result.status!==0)process.exit(result.status||1);
+await import('../packages/privacy-notice/verify.mjs');
