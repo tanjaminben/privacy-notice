@@ -15,13 +15,38 @@
     },
     {
       "path": "ASSET-REQUIREMENTS.json",
-      "bytes": 32292,
-      "sha256": "f942ad4bd0802b1ccfcba6a1d2a34552bdf5218209b1aff7725ee4742e41ae7d"
+      "bytes": 9178,
+      "sha256": "7474314778317694ac4ad403fca787c20b9d7d9e8ede73b329c2a3b802bea9f8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4198,
+      "sha256": "839efc3cc786d6ee151820d62deda6862367db2dccda5d4ee6e9e1ab347f0f63"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 431,
+      "sha256": "18fd718410dcbd5b26aa36254db77033d784671caeebbca9740b50bbe7604d6c"
+    },
+    {
+      "path": "SOURCE-SNAPSHOT.md",
+      "bytes": 858,
+      "sha256": "6abe3a526b9c66824f50899cec94c86d362a94be608f2de3494b232032cc45a0"
+    },
+    {
+      "path": "THIRD-PARTY-NOTICES.md",
+      "bytes": 1006,
+      "sha256": "0aa524e75e7e7010b0c7f6fdb3e26eb1194c0bff21c152d6613416ab7f17b848"
     },
     {
       "path": "docs/images/banner.png",
       "bytes": 1759040,
       "sha256": "42f176cebcf01bf0b08e8502b7446354d18b4588c97758ca25b92debee11b3e4"
+    },
+    {
+      "path": "docs/images/buttons/LICENSE-Barlow.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
     },
     {
       "path": "docs/images/buttons/kofi-static.svg",
@@ -34,24 +59,29 @@
       "sha256": "508496ae7e231eede97f9d55184b3cda4510402be6bc1466efbd3f4e07a1ea7f"
     },
     {
-      "path": "docs/images/buttons/LICENSE-Barlow.txt",
-      "bytes": 4377,
-      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
-    },
-    {
       "path": "docs/images/buttons/privacy-notice.svg",
       "bytes": 6727,
       "sha256": "3c92c764aea29713886e73d7ecd79e6f84e4ac4d8c4486dd07fdc3a78df94ea9"
     },
     {
       "path": "package.json",
-      "bytes": 474,
-      "sha256": "998286b16eac598c85025bcd4764c7796818c4686e5200ec526e220021606f2b"
+      "bytes": 380,
+      "sha256": "a410f1d064d7e3464775b0eca783178ad1fa157a7fcca38e9cd90f03337f7ace"
+    },
+    {
+      "path": "packages/privacy-notice/SOURCE-PROVENANCE.json",
+      "bytes": 24506,
+      "sha256": "d182378471929b158fd3aa32b10d0f3c659e07aaedcf66d05ec39b89659696c3"
+    },
+    {
+      "path": "packages/privacy-notice/build-circular.mjs",
+      "bytes": 13202,
+      "sha256": "f3508899ae82742eb2878d64c59b6f853dacfa5590bacdc6757c33c5a35971ac"
     },
     {
       "path": "packages/privacy-notice/build.mjs",
-      "bytes": 19261,
-      "sha256": "43abe6eb61be5dffc33cb57290876639e4438bcb355601d37e688890ecdb1420"
+      "bytes": 110,
+      "sha256": "1c2ec301a4bd800f88b7b12027b27edb5c563456dc27e4e8357a12c046338980"
     },
     {
       "path": "packages/privacy-notice/source/config.js",
@@ -80,18 +110,18 @@
     },
     {
       "path": "packages/privacy-notice/source/notice.css",
-      "bytes": 17416,
-      "sha256": "16642e3829ab48a819c51643dab845ddbae56f1e43fcafeb1a919b044049fa50"
+      "bytes": 27605,
+      "sha256": "dad36fe550d4d6a68bfc3fe133ba698ef37e7bf86ef478936d4f4feb599dc0d2"
     },
     {
       "path": "packages/privacy-notice/source/notice.js",
-      "bytes": 2393,
-      "sha256": "764e3ffd91a6c54e3384341097e2f342c677660dbb6e6219283668a1461e2d18"
+      "bytes": 1978,
+      "sha256": "ca9d441d6f3307f1b989e4bcbd5a4236ac6218450c3c945a0a1bd5c0569ab426"
     },
     {
-      "path": "packages/privacy-notice/SOURCE-PROVENANCE.json",
-      "bytes": 24506,
-      "sha256": "d182378471929b158fd3aa32b10d0f3c659e07aaedcf66d05ec39b89659696c3"
+      "path": "packages/privacy-notice/source/teaching.mjs",
+      "bytes": 17011,
+      "sha256": "f9e4a530334a12b1697ccdd9fec0875630ba843fd7ac8eb9c6ede41df1c618a9"
     },
     {
       "path": "packages/privacy-notice/templates/notice.html",
@@ -100,23 +130,23 @@
     },
     {
       "path": "packages/privacy-notice/verify.mjs",
-      "bytes": 4847,
-      "sha256": "93e878957e4033e7e458ad3a47c6480d394bac3efe1cbf910c63e3ee829d4570"
+      "bytes": 5943,
+      "sha256": "db29a02930aaef77382dc68e72c14e2fce5ecfdb382f9b91b9d225454a5a7a74"
     },
     {
       "path": "preview/frame.html",
-      "bytes": 4400,
-      "sha256": "41be5b93609f975df294f95a7405527bfdef7f79739f0d92c501e36730d57254"
+      "bytes": 9054,
+      "sha256": "032ee3d9b2c67e79e13dedc9c6961d252c15c94d3737fb53244be690c9c27eb0"
     },
     {
       "path": "preview/server.mjs",
-      "bytes": 2448,
-      "sha256": "553d81a05d4865395ac57675e381c488fbbabbab2a94af2e0d19d6660169d765"
+      "bytes": 2637,
+      "sha256": "a0c57331811e4b2fa9c587c1ad2e29fd19572d50192e5ba0e0e5f88f9449e2cf"
     },
     {
-      "path": "README.md",
-      "bytes": 3063,
-      "sha256": "ee1e259133b2187d0182e97bada9cbdb2b40f65f50d8fc8b438d5f0cd13f1f2c"
+      "path": "scripts/build.mjs",
+      "bytes": 1108,
+      "sha256": "bed51aa2492d5a000d7547297c4cbd558ab5378a3abbebb311dcef8e39ac1177"
     },
     {
       "path": "scripts/verify-assets.mjs",
@@ -124,19 +154,19 @@
       "sha256": "dd3977ddbd4b683f02f04d3d38999f143bd9a69543daee25dd3e2db57e308067"
     },
     {
+      "path": "scripts/verify-build.mjs",
+      "bytes": 619,
+      "sha256": "93a1800b56e22ab7daca22563aaae9654d850d516b0f857d9509c696df3f55d3"
+    },
+    {
       "path": "scripts/verify-checkpoint.mjs",
-      "bytes": 1007,
-      "sha256": "f5adaec44e27d2b2d1baa30d890ad745686425b26b76ad64f50d6b7cdb1e9180"
+      "bytes": 1880,
+      "sha256": "83f0bf5a0fc7e299ea3dfe02c727386bab8b69c0f708c7d405808afd46f42c71"
     },
     {
       "path": "scripts/verify-snapshot.mjs",
-      "bytes": 2796,
-      "sha256": "949e056dc7828346e2ecae3848859b017ba594d5ed216cf8dd0de2cb38d68660"
-    },
-    {
-      "path": "SECURITY.md",
-      "bytes": 431,
-      "sha256": "18fd718410dcbd5b26aa36254db77033d784671caeebbca9740b50bbe7604d6c"
+      "bytes": 2877,
+      "sha256": "9887d370ce074046374a25c49ab24eaaa06115d140b61cfb004f78536ed36d32"
     },
     {
       "path": "site/explanation-annotations.js",
@@ -265,13 +295,18 @@
     },
     {
       "path": "site/landing.js",
-      "bytes": 7920,
-      "sha256": "d581c9975f7af544c2d22fc8f89b4276941ade5e6ceb40ee074b9f74f1318f3d"
+      "bytes": 8796,
+      "sha256": "7e7a6ce5ab36152e1aa81d4c707489f028b2723c3878c666cc8ae29760e65dbf"
+    },
+    {
+      "path": "site/project-identities.css",
+      "bytes": 2147,
+      "sha256": "7b095439bb59838d1776cafe619a47ed5cba1f7a65d3035fa190253c3f679949"
     },
     {
       "path": "site/styles.css",
-      "bytes": 25571,
-      "sha256": "8daa6630a0259f9948cbfdee59212d4635d5a171f894ff3db2967100f6378a45"
+      "bytes": 29793,
+      "sha256": "af8ddeaab2163521fff78d7a2825264dfda65766f9f35c410cc5940035d0dec3"
     },
     {
       "path": "site/vendor/nutshell/LICENSE.txt",
@@ -280,8 +315,8 @@
     },
     {
       "path": "site/vendor/nutshell/nutshell.js",
-      "bytes": 177434,
-      "sha256": "3f13933c917b57528d2fb78fe904c92a4b7b03d4cb78c999578bd599f6c505c2"
+      "bytes": 186037,
+      "sha256": "2716b4e9487d46cd1fc782e254b9e28b412ae43decb5054094d2622de76da70b"
     },
     {
       "path": "site/vendor/rough-notation/LICENSE",
@@ -292,16 +327,6 @@
       "path": "site/vendor/rough-notation/rough-notation.esm.js",
       "bytes": 10691,
       "sha256": "af346fb8433c55a08400d4c8d3edd2083b5e5d1f78980f20cc7151cdc8379687"
-    },
-    {
-      "path": "SOURCE-SNAPSHOT.md",
-      "bytes": 858,
-      "sha256": "6abe3a526b9c66824f50899cec94c86d362a94be608f2de3494b232032cc45a0"
-    },
-    {
-      "path": "THIRD-PARTY-NOTICES.md",
-      "bytes": 1006,
-      "sha256": "0aa524e75e7e7010b0c7f6fdb3e26eb1194c0bff21c152d6613416ab7f17b848"
     }
   ],
   "generatedPaths": [
@@ -442,7 +467,44 @@
     "site/guides/privacy-notice/art/tools-800.webp",
     "site/guides/privacy-notice/art/vegetable-spread-480.webp",
     "site/guides/privacy-notice/art/vegetable-spread-800.webp",
-    "site/guides/privacy-notice/art/vegetables-square.png"
+    "site/guides/privacy-notice/art/vegetables-square.png",
+    "site/assets/bt-soft-upright-01-40-1x-9036f3a7bceb.png",
+    "site/assets/bt-soft-upright-01-40-2x-9514ec0848cf.png",
+    "site/assets/bt-soft-upright-01-40-3x-dc50163d2f4d.png",
+    "site/assets/bt-soft-upright-01-40-4x-0b2b9f15a7c3.png",
+    "site/assets/bt-soft-upright-01-44-1x-8de6f0b2bfff.png",
+    "site/assets/bt-soft-upright-01-44-2x-d499ca3895f0.png",
+    "site/assets/bt-soft-upright-01-44-3x-ab15e44a48bc.png",
+    "site/assets/bt-soft-upright-01-44-4x-adc2be220271.png",
+    "site/assets/nav-kofi.png",
+    "site/assets/nav-linkedin.svg",
+    "site/assets/nav-x.svg",
+    "site/assets/projects/anatomy.svg",
+    "site/assets/projects/certification.svg",
+    "site/assets/projects/cipt-studio.svg",
+    "site/assets/projects/comics.svg",
+    "site/assets/projects/council.svg",
+    "site/assets/projects/guides.svg",
+    "site/assets/projects/machine-navigation.svg",
+    "site/assets/projects/mechanica.svg",
+    "site/assets/projects/mildly-feral.svg",
+    "site/assets/projects/posters.svg",
+    "site/assets/projects/privacy-notice.svg",
+    "site/assets/projects/redactorium.svg",
+    "site/assets/projects/safeseed.svg",
+    "site/assets/projects/skip-ad.svg",
+    "site/assets/projects/stickers.svg",
+    "site/assets/projects/tools.svg",
+    "site/assets/projects/training.svg",
+    "site/assets/projects/work.svg",
+    "site/guides/privacy-notice/art/advertising-boundaries-1280.webp",
+    "site/guides/privacy-notice/art/analytics-recipe-1280.webp",
+    "site/guides/privacy-notice/art/international-access-1280.webp",
+    "site/guides/privacy-notice/art/local-processing-comic-1280.webp",
+    "site/guides/privacy-notice/art/order-handoffs-1280.webp",
+    "site/guides/privacy-notice/art/page-request-1280.webp",
+    "site/guides/privacy-notice/art/provider-jobs-1280.webp",
+    "site/guides/privacy-notice/art/publisher-1280.webp"
   ],
   "localChanges": {
     "reviewId": "ben-tan-prose-20261026-33459e7e",
@@ -469,5 +531,16 @@
         "localSha256": "23cc666188252bab4f756001339e584e32fde170fc9974ccd76b6733ad09554f"
       }
     ]
+  },
+  "currentRevision": {
+    "date": "2026-10-27",
+    "baseRevision": "0b72d59c75782c0be94b6d692c6b58a45d4f4884",
+    "status": "uncommitted local candidate",
+    "selection": "Direction B, selected directly by Ben",
+    "pairedFactsUnchangedSha256": "7e65cb30a42a87e34b69fd0f54e9a529ed33be4ca07680e3341afab80e1125b5",
+    "scope": "15-topic educational guide; operational privacy notices and other projects excluded",
+    "spacingFeedback": "Eight browser comments addressed: natural topic flow, independent fact columns, order-label separation and comic alignment. Copy and art unchanged.",
+    "traditionalFacelift": "Scoped newspaper CSS: broader columns with art in flow, serif hierarchy, article framing, visible writing notes and a full-width retention schedule; copy, media and grocery style preserved.",
+    "editionSwitch": "Top-only native edition links; no section-anchor carryover."
   }
 }

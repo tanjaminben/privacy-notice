@@ -32,6 +32,7 @@ for (const file of manifest.files) {
 async function walk(directory, prefix = '') {
   for (const entry of await readdir(directory, { withFileTypes: true })) {
     const relative = prefix + entry.name;
+    if (entry.name === '.git') continue; // A worktree uses a Git metadata file.
     if (extraIgnored.has(relative)) continue;
     if (entry.isDirectory()) {
       if (!ignoredDirectories.has(entry.name)) await walk(path.join(directory, entry.name), relative + '/');

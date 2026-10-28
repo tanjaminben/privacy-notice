@@ -7,9 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "build": "node scripts/verify-assets.mjs && node packages/privacy-notice/build.mjs",
+    "build": "node scripts/build.mjs",
     "verify": "node scripts/verify-snapshot.mjs && node scripts/verify-checkpoint.mjs",
-    "verify:build": "node scripts/verify-assets.mjs && node packages/privacy-notice/verify.mjs",
+    "verify:build": "node scripts/verify-build.mjs",
     "preview": "node preview/server.mjs"
   }
 }

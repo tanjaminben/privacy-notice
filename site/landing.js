@@ -5,6 +5,25 @@ const dropdowns = [...navigation.querySelectorAll('.nav-group')];
 const navCategories = [...navigation.querySelectorAll('.nav-category')];
 const work = document.querySelector('#work');
 root.classList.add('enhanced');
+// Keep only the shared header's centering independent of root scrollbar gutters.
+// No page-content measurement, storage, artwork or flight geometry is changed.
+const sharedHeader = document.querySelector('.header-inner');
+function syncSharedHeaderViewport() {
+  if (!sharedHeader) return;
+  const width = `${window.innerWidth}px`;
+  if (sharedHeader.style.getPropertyValue('--header-viewport-width') !== width) {
+    sharedHeader.style.setProperty('--header-viewport-width', width);
+  }
+}
+syncSharedHeaderViewport();
+window.addEventListener('resize', syncSharedHeaderViewport, { passive: true });
+
+// Closed native details can retain layout boxes; their links cannot take focus.
+function visibleNavigationControl(control) {
+  const category = control.closest('.nav-category');
+  return control.getClientRects().length > 0 &&
+    (!category || category.open || control === category.querySelector('summary'));
+}
 // Local visual comparison: show exact source-sheet artwork without repainting it.
 // No query parameter keeps Ben's final 01 selection from the static HTML/CSS.
 const logoStudies = {
@@ -93,7 +112,7 @@ dropdowns.forEach(dropdown => {
     event.preventDefault();
     closeDropdowns(dropdown);
     dropdown.open = true;
-    const controls = [...dropdown.querySelectorAll('a[href], .nav-category > summary')].filter(control => control.getClientRects().length);
+    const controls = [...dropdown.querySelectorAll('a[href], .nav-category > summary')].filter(visibleNavigationControl);
     (event.key === 'ArrowDown' ? controls[0] : controls[controls.length - 1])?.focus();
   });
 });
@@ -129,7 +148,7 @@ navigation.addEventListener('keydown', event => {
   if (event.defaultPrevented || !['ArrowDown', 'ArrowUp', 'Home', 'End'].includes(event.key)) return;
   const submenu = event.target.closest('.nav-submenu');
   if (!submenu) return;
-  const controls = [...submenu.querySelectorAll('a[href], summary')].filter(control => control.getClientRects().length);
+  const controls = [...submenu.querySelectorAll('a[href], summary')].filter(visibleNavigationControl);
   const current = controls.indexOf(event.target);
   if (current < 0) return;
   event.preventDefault();
